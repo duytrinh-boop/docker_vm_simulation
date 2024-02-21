@@ -1,0 +1,23 @@
+multipass delete --all && multipass purge
+
+nodename=splunk-test-jumphost
+
+# launch instance
+multipass launch --cpus 8 --disk 50G --memory 8G --name $nodename
+
+# 
+cat ~/.ssh/id_rsa.pub | multipass exec $nodename -- tee -a .ssh/authorized_keys 
+cat ~/.ssh/id_rsa | multipass exec $nodename -- tee -a .ssh/id_rsa
+multipass exec $nodename -- chmod 600 .ssh/id_rsa
+
+multipass exec $nodename -- sudo apt update
+
+# install ansible, and a desktop environment, and RDP server
+multipass exec $nodename -- sudo apt install ansible ubuntu-desktop xrdp -y
+
+#need a user with a password in order to log in. One possibility is to set a password to the default ubuntu user.
+multipass exec $nodename -- sudo passwd ubuntu
+
+multipass exec $nodename -- git clone git@github.com:duytrinh-boop/docker_vm_simulation.git
+
+multipass shell $nodename
