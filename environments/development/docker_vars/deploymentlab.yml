@@ -1,0 +1,47 @@
+
+---
+server_names_list:
+  - name: uf1.lab
+    instancetype: 
+      - uf
+  - name: uf2.lab
+    instancetype: 
+      - uf
+  - name: ds.lab
+    instancetype: 
+      - monitoringconsole
+      - deploymentserver
+      - licensemaster
+      - full
+  - name: cm.lab
+    instancetype: 
+      - clustermanager
+      - full
+  - name: sh1.lab
+    instancetype: 
+      - search
+      - full
+  - name: idx1.lab
+    instancetype: 
+      - indexers
+      - full
+  - name: idx2.lab
+    instancetype: 
+      - indexers
+      - full
+  - name: idx3.lab
+    instancetype: 
+      - indexers
+      - full
+
+
+environment_dir: "development"
+#dockerfile_baseimage: "ubuntu:latest" # E.g. fedora:36 OR ubuntu:latest. Find baseimages on hub.docker.com
+dockerfile_baseimage: "fedora:36" 
+simulated_vm_os_family:  "{% if ('ubuntu' in dockerfile_baseimage or 'debian' in dockerfile_baseimage) %}Debian{% elif ('centos' in dockerfile_baseimage or 'rocky' in dockerfile_baseimage) %}Centos{% else %}RedHat{% endif %}"  # Either "Debian" OR "RedHat" uses role/vars/Debian.yml variables. Need to match dockerfile_baseimage
+
+#following compose file will be generated based on {{ server_names_list }} above
+docker_compose_file_name: "deploymentlab" 
+docker_image_custom_name: "splk_fedora_36"
+
+

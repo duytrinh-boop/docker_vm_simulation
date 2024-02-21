@@ -1,0 +1,32 @@
+
+---
+server_names_list:
+  - name: uf3.tintin.website
+    instancetype: 
+      - uf
+  - name: uf4.tintin.website
+    instancetype: 
+      - uf
+  - name: aio1.tintin.website
+    instancetype: 
+      - indexers
+      - monitoringconsole
+      - licensemaster
+      - full
+  - name: ds1.tintin.website
+    instancetype: 
+      - deploymentserver
+      - full
+
+
+environment_dir: "development"
+dockerfile_baseimage: "ubuntu:latest" # E.g. fedora:36 OR ubuntu:latest. Find baseimages on hub.docker.com
+simulated_vm_os_family:  "{% if ('ubuntu' in dockerfile_baseimage or 'debian' in dockerfile_baseimage) %}Debian{% elif ('centos' in dockerfile_baseimage or 'rocky' in dockerfile_baseimage) %}Centos{% else %}RedHat{% endif %}"  # Either "Debian" OR "RedHat" uses role/vars/Debian.yml variables. Need to match dockerfile_baseimage
+
+#following compose file will be generated based on {{ server_names_list }} above
+docker_compose_file_name: "tintin_website_certificate_test" 
+docker_image_custom_name: "splk_ubuntu_latest"
+
+
+splunk_package_uf: "splunkforwarder-9.0.2-17e00c557dc1-Linux-x86_64.tgz"
+splunk_package_full: "splunk-9.0.2-17e00c557dc1-Linux-x86_64.tgz" 
