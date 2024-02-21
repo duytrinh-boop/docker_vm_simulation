@@ -1,0 +1,14 @@
+---
+# Example playbook to perform either a splunk installation or upgrade
+- hosts:
+    - localhost
+  gather_facts: true
+  roles:
+    - ../roles/docker_vm_simulation
+  vars:
+    deployment_task: deploy_sequence.yml
+    environment_dir: development
+  vars_files:
+    - "../environments/{{ environment_dir }}/docker_vars/{{ docker_vars_file }}"
+    #- load variables based on linux distro family https://ankush-chavan.medium.com/importing-the-variable-files-based-on-the-os-family-in-the-ansible-playbook-9e5528bfb47d
+    - "../roles/docker_vm_simulation/vars/{{ simulated_vm_os_family }}.yml"
