@@ -1,0 +1,21 @@
+---
+# handlers file for patchmanagement
+- name: "Restart required services"
+  become: yes
+  systemd:
+    name: "{{ item }}"
+    state: "restarted"
+    daemon_reload: true
+  when:
+    - 'needs_service_restart.stdout_lines | length > 0'
+    - 'needs_reboot.rc is defined and needs_reboot.rc != 1 or needs_reboot.stat.exists == False'
+    - 'not patch_never_restart_svc'
+  with_items: "{{ needs_service_restart.stdout_lines }}"
+  ignore_errors: yes
+
+# referencing to new task due to needing a block
+- name: "Reboot after patching"
+  include_tasks: tasks/reboot-handler.yml
+
+
+

@@ -1,0 +1,46 @@
+---
+- name: "REBOOT | Debian Ubuntu"
+  block:
+    # For testing whether or not we need a reboot or service restart we need debian-goodies
+    #   installed to utilize the checkrestart utility
+    - name: "REBOOT | Ensure debian-goodies is installed"
+      apt:
+        name: "debian-goodies"
+        state: "present"
+      register: "patch_utils_installed"
+      retries: "3"
+      until: "patch_utils_installed is succeeded"
+
+    # checkrestart 
+    # -m : machinereadable output
+    # -n : do not use lsof
+    # grep only lines starting with SERVICE. These are the services identified that need restart
+    # awk: print last column = $NF, with field separator /. E.g. SERVICE:pulseaudio,3356,/usr/bin/pulseaudio, would be only pulseaudio
+    # sort -u: remove duplicates
+    - name: "REBOOT | Check if services need restarting with checkrestart"
+      shell: 
+        cmd: checkrestart -m -n | grep -iE "^SERVICE" | awk -F "/" '{print $NF}' | sort -u
+      changed_when: "needs_service_restart.stdout_lines | length > 0"
+      register: "needs_service_restart"
+      notify:
+        - "Restart required services"
+      when: 'not patch_never_restart_svc'
+
+    - name: Check if a reboot is required.
+      stat:
+        path: "/var/run/reboot-required"
+      register: needs_reboot
+      changed_when: 'needs_reboot.stat.exists'
+      notify:
+        - "Reboot after patching"
+      when: 
+        - 'not patch_never_reboot'
+
+    # - name: "REBOOT | Output collected apt update output"
+    #   debug:
+    #      var: "patch_apt_results.results"
+    #   when: "patch_display_patch_output"
+  when:
+    - 'ansible_os_family == "Debian"'
+  
+  become: True

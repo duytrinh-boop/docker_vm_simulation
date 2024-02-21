@@ -1,0 +1,40 @@
+---
+#https://www.jeffgeerling.com/blog/2018/reboot-and-wait-reboot-complete-ansible-playbook
+- name: "Reboot after patching"
+  block:
+    - name: "Reboot after patching"
+      shell: "sleep 5 && reboot"
+      async: 1
+      poll: 0
+
+    
+    - name: Wait for the reboot to complete if there was a change.
+      wait_for_connection:
+        connect_timeout: 20
+        sleep: 5
+        delay: 5
+        timeout: 300
+
+  rescue:
+    - name: "RESCUE | Ensure we are not in rescue mode"
+      wait_for_connection:
+        timeout: 120
+
+
+
+# proper way to reboot host https://earlruby.org/2019/07/rebooting-a-host-with-ansible/
+    # -name: "Reboot after patching"
+      # reboot:
+      #   msg: "{{ patch_reboot_message | default('Rebooting due to patching.') }}"
+      #   connect_timeout: 15    # Disconnect after 15 seconds if it ssh isn’t working
+      #   reboot_timeout: 30   # Keep attempting to connect for 10 minutes (600 seconds)
+      #   pre_reboot_delay: 3   # Wait 3 seconds before it attempts to reboot
+      #   post_reboot_delay: 30 # Wait 30 seconds
+      #   test_command: whoami  # Attempt to connect via ssh and run whoami
+      # when:
+      #   - 'needs_reboot.rc is defined and needs_reboot.rc == 1 or needs_reboot.stat.exists'
+      #   - 'not patch_never_reboot'
+      # debugger: always
+      # become: True
+      # become_user: "root"
+      # changed_when: false

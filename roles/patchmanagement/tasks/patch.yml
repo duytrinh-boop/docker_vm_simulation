@@ -1,0 +1,14 @@
+---
+- name: "PATCH | Tasks depends on distribution"
+  debug:
+    var: ansible_distribution
+
+# When the target runs under CENTOS / REDHAT
+- name: "PATCH | Include tasks for CentOS & RedHat tasks"
+  include_tasks: "linux_tasks/redhat_centos.yml"
+  when: ansible_distribution in rhel_distribs
+
+# When the target runs under Debian / Ubuntu
+- name: "PATCH | Inlude tasks for Debian & Ubuntu tasks"
+  include_tasks: "linux_tasks/debian_ubuntu.yml"
+  when: ansible_distribution in debian_distribs

@@ -1,0 +1,21 @@
+---
+- name: "SETUP | Keep starting time"
+  set_fact:
+    pm_date: "{{ pm_date_format }}"
+
+- name: "SETUP | Set log path"
+  set_fact:
+    pm_log_path: "/root/patchmanagement/patchmanagement_{{ pm_date|replace('/', '-') }}.log"
+
+# We take some notes about the system before running the patchmanagement
+- name: "SETUP | Create /root/patchmanagement"
+  become: true
+  file:
+    path: /root/patchmanagement
+    state: directory
+
+- name: "SETUP | Take some notes on the system's state"
+  become: true
+  shell: ip a > {{ pm_log_path }} && echo "" >> {{ pm_log_path }} && ip r >> {{ pm_log_path }} && echo "" >> {{ pm_log_path }} && ps auxfww >> {{ pm_log_path }} && echo "" >> {{ pm_log_path }} && mount >> {{ pm_log_path }}
+  ignore_errors: true
+  changed_when: false
