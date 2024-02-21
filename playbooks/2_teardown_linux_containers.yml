@@ -2,7 +2,7 @@
 # Example playbook to perform either a splunk installation or upgrade
 - hosts:
     - localhost
-  gather_facts: false
+  gather_facts: true
   roles:
     - ../roles/docker_vm_simulation
   vars:
