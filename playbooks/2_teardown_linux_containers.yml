@@ -1,6 +1,7 @@
 ---
 # Example playbook to perform either a splunk installation or upgrade
-- hosts:
+- name: 2_teardown_linux_containers
+  hosts:
     - localhost
   gather_facts: true
   roles:

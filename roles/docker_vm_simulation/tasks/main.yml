@@ -16,4 +16,6 @@
 
 - name: Update the marker file timestamp
   command: "touch {{ successful_pre_reqs_marker }}"
-  when: not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }}"
+  when: 
+    - not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }}"
+    - ansible_play_name != "2_teardown_linux_containers"
