@@ -89,19 +89,6 @@
       state: started
       enabled: yes
 
-  - name: add user to docker group
-    user:
-      name: "{{ ansible_user_id }}"
-      groups: docker
-      append: yes
-    become: true
-    register: add_to_docker_group_result
-
-  - name: Reset ssh connection to allow user changes to affect ansible user
-    ansible.builtin.meta:
-      reset_connection
-    when: add_to_docker_group_result.changed
-
   # - name: Force-install collection community.docker to ensure community.docker.docker_compose_v2 works
   #   community.general.ansible_galaxy_install:
   #     type: collection
@@ -118,4 +105,13 @@
         role_path: "~/.ansible/collections/ansible_collections/community/docker"
     become: true
 
+  - name: Install collection community.docker to ensure community.docker.docker_compose_v2 works
+    command: "ansible-galaxy install {{ item.role_name }}"
+    args:
+      creates: "{{ item.role_path }}"
+    loop: 
+      - role_name: community.docker
+        role_path: "~/.ansible/collections/ansible_collections/community/docker"
+    become: false
+    
   when: ansible_os_family == 'Debian'
