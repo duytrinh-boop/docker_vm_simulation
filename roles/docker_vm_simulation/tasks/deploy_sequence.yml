@@ -3,6 +3,10 @@
   include_tasks: install_docker.yml
   when: not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }}"
 
+- name: Add user to group docker
+  include_tasks: add_user_to_docker_group.yml
+  # when: not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }}"
+
 - name: install prerequisites
   include_tasks: install_prerequisites.yml
   when: not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }}"
