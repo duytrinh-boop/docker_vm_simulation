@@ -1,0 +1,29 @@
+- hosts: all
+  tasks:
+    - name: Check for existence of the marker file
+      stat:
+        path: "{{ role_path }}/files/pre_reqs_marker"
+      register: marker_file
+
+    - name: Set fact for the file age if the file exists
+      set_fact:
+        file_age_days: "{{ ((ansible_date_time.epoch | int) - (marker_file.stat.mtime | int)) / 86400 }}"
+      when: marker_file.stat.exists
+
+    # - name: Run prerequisite tasks
+    #   include_tasks: prerequisites.yml
+    #   when: not marker_file.stat.exists or file_age_days > 30
+    - name: Run prerequisite tasks
+      debug:
+        msg: "Running prerequisite tasks"
+      when: not marker_file.stat.exists or file_age_days > 30
+
+    - name: Skip prerequisite tasks
+      debug:
+        msg: "Running prerequisite tasks"
+      when: marker_file.stat.exists and file_age_days < 30
+
+
+    - name: Update the marker file timestamp
+      command: touch {{ role_path }}/files/pre
+      when: not marker_file.stat.exists or file_age_days > 30
