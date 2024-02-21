@@ -41,7 +41,7 @@ dockerfile_baseimage: "ubuntu:latest"
 simulated_vm_os_family:  "{% if ('ubuntu' in dockerfile_baseimage or 'debian' in dockerfile_baseimage) %}Debian{% elif ('centos' in dockerfile_baseimage or 'rocky' in dockerfile_baseimage) %}Centos{% else %}RedHat{% endif %}"  # Either "Debian" OR "RedHat" uses role/vars/Debian.yml variables. Need to match dockerfile_baseimage
 
 #following compose file will be generated based on {{ server_names_list }} above
-docker_compose_file_name: "deploymentlab" 
+docker_compose_file_name: "{{ inventory_file }}" 
 docker_image_custom_name: "splunk_image_{{ dockerfile_baseimage | replace(':', '_') }}"
 
 
