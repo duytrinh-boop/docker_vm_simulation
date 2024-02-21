@@ -1,7 +1,19 @@
 ---
+- name: Check for existence of the marker file
+  stat:
+    path: "{{ successful_pre_reqs_marker }}"
+  register: marker_file
 
+- name: Set fact for the file age if the file exists
+  set_fact:
+    file_age_days: "{{ ((ansible_date_time.epoch | int) - (marker_file.stat.mtime | int)) / 86400 }}"
+  when: marker_file.stat.exists
 
 # Always set the deployment_task var to your desired task in the playbook! e.g. check_splunk.yml (install|upgrade) or configure_apps.yml  (app/addon install|upgrade)
 - name: Include the specified task file
   tags: always
   include_tasks: "{{ deployment_task }}"
+
+- name: Update the marker file timestamp
+  command: "touch {{ successful_pre_reqs_marker }}"
+  when: not marker_file.stat.exists or file_age_days > recheck_prereqs_after_days

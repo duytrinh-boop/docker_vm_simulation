@@ -19,3 +19,8 @@ docker_entrypoint: undefined
 ssh_key_filename: "splunk_docker_key.id"
 ssh_key_publickey_filename: "{{ ssh_key_filename }}.pub"
 ssh_key_password: ""
+
+### On successful run, a marker file will be created
+### This file will enable us to skip most tasks in the future, for a certain number of days"{{ role_path }}/files/successfully_pre_reqs_marker"
+successful_pre_reqs_marker: "{{ role_path }}/files/successful_pre_reqs_marker_file"
+recheck_prereqs_after_days: 30
