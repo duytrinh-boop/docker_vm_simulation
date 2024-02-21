@@ -1,11 +1,11 @@
 ---
 - name: install docker
   include_tasks: install_docker.yml
-  when: not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }} "
+  when: not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }}"
 
 - name: install prerequisites
   include_tasks: install_prerequisites.yml
-  when: not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }} "
+  when: not marker_file.stat.exists or file_age_days > "{{ recheck_prereqs_after_days }}"
 
 - name: create ssh-keypair to be used in custom docker image
   include_tasks: create_ssh_key.yml
