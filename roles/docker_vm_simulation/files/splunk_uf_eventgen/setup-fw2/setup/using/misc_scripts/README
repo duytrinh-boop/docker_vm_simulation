@@ -1,0 +1,21 @@
+This directory contains scripts that may be useful in
+setting up or managing the Splunk instance for the Using class
+
+Feel free to add to the scripts in this directory.
+If you add scripts, please document their purpose and command
+line below.
+
+delete_all_users.py
+  Arguments:
+     -S <numberOfStudents>      defaults to 16
+     -I <splunkInstallAccount>  defaults to splunkt
+  Removes user accounts from splunk.  Looks for users named student1,
+  student2, etc.
+
+change_user_passwords.py
+  Arguments:
+     -S <numberOfStudents>      defaults to 16
+     -I <splunkInstallAccount>  defaults to splunkt
+     -P <password>              the new password
+   Changes the passwords for student1, student2, etc to the new password
+   Meant for resetting when a default password is used for setup (eg Student1)

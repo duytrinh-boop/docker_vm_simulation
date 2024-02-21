@@ -1,0 +1,30 @@
+---
+#ensure that file exists. https://stackoverflow.com/questions/28347717/how-to-create-an-empty-file-with-ansible
+# creates a template file
+# force create needed in case server list has changed
+- name: "Check docker_compose file exists. Force creates empty j2-template file"
+  copy: 
+    content: ""
+    dest: "{{ docker_compose_file }}.j2"
+    force: yes
+
+- name: "Add header to docker_compose j2-template"
+  blockinfile:
+    path: "{{ docker_compose_file }}.j2"
+    block: "{{ lookup('file', role_path+'/templates/docker_compose_template.yml.j2') }}"
+
+- name: "Add servers to compose j2-template from server-list"
+  blockinfile:
+    path: "{{ docker_compose_file }}.j2"
+    insertafter: "BOF"
+    block: |2
+        {{ item.name }}:
+          <<: *systemd-settings
+          container_name: {{ item.name }}
+          hostname: {{ item.name }}
+          labels:
+            docker_compose_file: {{ docker_compose_file_name }}
+    state: present
+    marker: "# {mark} ANSIBLE MANAGED BLOCK {{item.name}}"
+  with_items: 
+    - "{{ server_names_list }}"

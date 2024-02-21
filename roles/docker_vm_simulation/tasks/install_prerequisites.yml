@@ -1,0 +1,25 @@
+---
+- name: Install pip on CentOS/RHEL
+  become: true
+  yum:
+    name: python3-pip
+    state: present
+  when: ansible_os_family == 'RedHat'
+
+- name: Install pip on Debian/Ubuntu
+  become: true
+  apt:
+    name: python3-pip
+    state: present
+    update_cache: yes
+  when: ansible_os_family == 'Debian'
+
+- name: Install Python modules related to docker
+  pip:
+    name:
+      - wheel
+      - docker
+      - pyyaml==5.3.1 
+      - docker-compose
+    state: present
+  # version 5.4 has error as of 2023-07-18 https://github.com/yaml/pyyaml/issues/724

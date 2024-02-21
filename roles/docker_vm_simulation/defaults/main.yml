@@ -1,0 +1,21 @@
+---
+### variables to create a docker_compose file
+server_names_list: undefined # need to be defined in your own environments file
+docker_compose_template: undefined
+simulated_vm_os_family: undefined # { RedHat | Debian }
+
+docker_compose_files_path: "{{ role_path }}/files/docker_compose_files"
+
+### variables to create custom docker image
+dockerfile_baseimage: undefined # e.g. fedora:36 OR ubuntu:latest
+os_user_name: ansible
+os_user_password: ansible
+package_manager: undefined 
+default_packages: undefined # package names are distro specific. Hence defined in vars/Debian.yml or vars/RedHat.yml 
+additional_packages: "" # space delimited package-names. E.g. "httpd vim python3"
+docker_entrypoint: undefined
+
+
+ssh_key_filename: "splunk_docker_key.id"
+ssh_key_publickey_filename: "{{ ssh_key_filename }}.pub"
+ssh_key_password: ""

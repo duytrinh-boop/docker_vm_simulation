@@ -1,0 +1,103 @@
+# BEGIN ANSIBLE MANAGED BLOCK
+version: "3.6"
+
+#https://splunk.github.io/docker-splunk/ADVANCED.html#install-apps
+
+## these settings can be replicated to all containers
+x-systemd-settings:
+  &systemd-settings
+  image: "splk_ubuntu_latest_with_predistributed_splunk"
+  privileged: true
+  command: bash -c "systemctl start ssh && tail -f /dev/null"
+  stdin_open: true # docker run -i
+  tty: true        # docker run -t
+
+
+# in order to test no airgapped systems
+networks:
+  no-internet:
+    driver: bridge
+    internal: true
+
+services:
+# END ANSIBLE MANAGED BLOCK
+# BEGIN ANSIBLE MANAGED BLOCK uf3.tintin.website
+  uf3.tintin.website:
+    <<: *systemd-settings
+    container_name: uf3.tintin.website
+    hostname: uf3.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK uf3.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK uf4.tintin.website
+  uf4.tintin.website:
+    <<: *systemd-settings
+    container_name: uf4.tintin.website
+    hostname: uf4.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK uf4.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK lm1.tintin.website
+  lm1.tintin.website:
+    <<: *systemd-settings
+    container_name: lm1.tintin.website
+    hostname: lm1.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK lm1.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK cm1.tintin.website
+  cm1.tintin.website:
+    <<: *systemd-settings
+    container_name: cm1.tintin.website
+    hostname: cm1.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK cm1.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK idx1.tintin.website
+  idx1.tintin.website:
+    <<: *systemd-settings
+    container_name: idx1.tintin.website
+    hostname: idx1.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK idx1.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK idx2.tintin.website
+  idx2.tintin.website:
+    <<: *systemd-settings
+    container_name: idx2.tintin.website
+    hostname: idx2.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK idx2.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK sh1.tintin.website
+  sh1.tintin.website:
+    <<: *systemd-settings
+    container_name: sh1.tintin.website
+    hostname: sh1.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK sh1.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK sh2.tintin.website
+  sh2.tintin.website:
+    <<: *systemd-settings
+    container_name: sh2.tintin.website
+    hostname: sh2.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK sh2.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK sh3.tintin.website
+  sh3.tintin.website:
+    <<: *systemd-settings
+    container_name: sh3.tintin.website
+    hostname: sh3.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK sh3.tintin.website
+# BEGIN ANSIBLE MANAGED BLOCK ds1.tintin.website
+  ds1.tintin.website:
+    <<: *systemd-settings
+    container_name: ds1.tintin.website
+    hostname: ds1.tintin.website
+    labels:
+      docker_compose_file: compose_file_tintin.website_v2_with_predistributed_splunk
+# END ANSIBLE MANAGED BLOCK ds1.tintin.website

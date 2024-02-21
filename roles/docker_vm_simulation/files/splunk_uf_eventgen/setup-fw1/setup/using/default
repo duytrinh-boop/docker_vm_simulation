@@ -1,0 +1,10 @@
+file=/opt/splunkt.tgz
+account=splunkt
+students=16
+password=Splunky
+shared=/opt/setup/shared
+license=/opt/setup/shared/splunk.license
+#Class is US Mountain Time, server is GMT
+ClassTZoffset=-7
+ServerTZoffset=0
+

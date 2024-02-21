@@ -1,0 +1,13 @@
+---
+- name: "Add search heads to shc section in ansible inventory"
+  blockinfile:
+    path: "../environments/development/inventory_compose_file_tintin.website_v2_with_predistributed_splunk.ini"
+    insertafter: "{{ item.section }}"
+    block: "{{ item.value }}"
+    state: present
+    marker: "# {mark} ANSIBLE MANAGED BLOCK {{item.value}}"
+  with_items:
+    - { section: "shdeployer", value: "lm1.tintin.website" }
+    - { section: "shc", value: "sh1.tintin.website" }
+    - { section: "shc", value: "sh2.tintin.website" }
+    - { section: "shc", value: "sh3.tintin.website" }

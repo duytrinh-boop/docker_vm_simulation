@@ -1,0 +1,23 @@
+---
+
+# add all servernames to /etc/hosts file, for automatic name resolv
+# Then ansible can reach containers by hostname instead of by ip-address
+# and you as well. 
+
+#### UPDATE /etc/hostsfile
+- name: "UPDATE /etc/hostsfile: get container hosts entry, formatted correctly for /etc/hosts"
+  shell: docker inspect -f '{{ '{{' }}range.NetworkSettings.Networks{{ '}}' }}{{ '{{' }}.IPAddress{{ '}}' }}{{ '{{' }}end{{ '}}' }}   {{ '{{' }}.Config.Hostname{{ '}}' }}' $(docker container ls -af label=docker_compose_file={{ docker_compose_file_name }} -aq)
+  register: host_entries
+  become: true
+  changed_when: false
+  ignore_errors: true
+
+- name: "UPDATE /etc/hostsfile: Update inventory file"
+  become: true
+  blockinfile:
+    path: /etc/hosts
+    #insertafter: '^\[{{ item.instancetype}}]'
+    insertafter: "BOF"  
+    block: |
+      {{ host_entries.stdout }}
+    state: present

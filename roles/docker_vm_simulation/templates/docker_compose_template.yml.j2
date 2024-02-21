@@ -1,0 +1,21 @@
+version: "3.6"
+
+#https://splunk.github.io/docker-splunk/ADVANCED.html#install-apps
+
+## these settings can be replicated to all containers
+x-systemd-settings:
+  &systemd-settings
+  image: "{{ docker_image_custom_name }}"
+  privileged: true
+  command: bash -c "systemctl start {{ linux_distro_family_openssh_service_name }} && tail -f /dev/null"
+  stdin_open: true # docker run -i
+  tty: true        # docker run -t
+
+
+# in order to test no airgapped systems
+networks:
+  no-internet:
+    driver: bridge
+    internal: true
+
+services:

@@ -1,0 +1,20 @@
+---
+- name: "Dockerfile: Populate template variables"
+  template: 
+    src: "{{ role_path }}/templates/dockerfile_template.j2"
+    dest: "{{ dockerfile_custom_images_path }}/{{ dockerfile_custom_filename }}"
+# State: Custom dockerfile is created
+
+
+- name: "Build custom image based on {{ dockerfile_custom_filename }}"
+  become: true
+  docker_image:
+    name:  "{{ docker_image_custom_name }}"
+    build:
+      pull: yes
+      path: "{{ dockerfile_custom_images_path }}/"
+      dockerfile: "{{ dockerfile_custom_filename }}"
+    state: present
+    source: build
+# State: Custom docker image is created
+

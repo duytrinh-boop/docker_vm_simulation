@@ -1,0 +1,47 @@
+# BEGIN ANSIBLE MANAGED BLOCK
+version: "3.6"
+
+#https://splunk.github.io/docker-splunk/ADVANCED.html#install-apps
+
+## these settings can be replicated to all containers
+x-systemd-settings:
+  &systemd-settings
+  image: "{{ docker_image_custom_name }}"
+  privileged: true
+  command: bash -c "systemctl start {{ linux_distro_family_openssh_service_name }} && tail -f /dev/null"
+  stdin_open: true # docker run -i
+  tty: true        # docker run -t
+
+
+# in order to test no airgapped systems
+networks:
+  no-internet:
+    driver: bridge
+    internal: true
+
+services:
+# END ANSIBLE MANAGED BLOCK
+# BEGIN ANSIBLE MANAGED BLOCK soar1.test
+  soar1.test:
+    <<: *systemd-settings
+    container_name: soar1.test
+    hostname: soar1.test
+    labels:
+      docker_compose_file: compose_file_soar_machines
+# END ANSIBLE MANAGED BLOCK soar1.test
+# BEGIN ANSIBLE MANAGED BLOCK soar2.test
+  soar2.test:
+    <<: *systemd-settings
+    container_name: soar2.test
+    hostname: soar2.test
+    labels:
+      docker_compose_file: compose_file_soar_machines
+# END ANSIBLE MANAGED BLOCK soar2.test
+# BEGIN ANSIBLE MANAGED BLOCK soar3.test
+  soar3.test:
+    <<: *systemd-settings
+    container_name: soar3.test
+    hostname: soar3.test
+    labels:
+      docker_compose_file: compose_file_soar_machines
+# END ANSIBLE MANAGED BLOCK soar3.test

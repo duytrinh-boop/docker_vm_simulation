@@ -1,0 +1,75 @@
+---
+
+- name: Create empty inventory dictionary
+  set_fact:
+    inventory: {}
+
+- name: Populate inventory dictionary with servers
+  set_fact:
+    inventory: "{{ inventory | combine({item.1: inventory.get(item.1, []) + [item.0.name] }, recursive=True) }}"
+  with_subelements:
+    - "{{ server_names_list }}"
+    - instancetype
+    - skip_missing: false
+
+# variable server_names_list now specifies also instancetype
+# and populating happens in templatefile
+- name: "Instantiate ansible inventory file from template"
+  changed_when: false
+  template:
+    src: "{{ role_path }}/templates/inventory.ini.j2"
+    dest: "{{ ansible_inventory_file }}"
+
+
+#old code below
+# docker container ls -af label=docker_compose_file={{ docker_compose_file_name }} -aq
+# $(docker container ls -af label=docker_compose_file={{ docker_compose_file_name }} -aq)
+# Automatically create hosts file
+# step 1: get all containers with ancestor , save to fact
+# - name: "Query and store all containers defined in {{ docker_compose_file_name }}"
+#   shell: docker inspect -f '{{ '{{' }}.Config.Hostname{{ '}}' }}' $(docker container ls -af label=docker_compose_file={{ docker_compose_file_name }} -aq)
+#   register: all_containers
+#   changed_when: false
+#   become: true
+#   ignore_errors: true
+
+# - name: "Save all_containers to variable 'all_containers_list'"
+#   set_fact:
+#     all_containers_list: "{{ all_containers.stdout }}"
+
+# - name: "Instantiate ansible inventory file from template"
+#   changed_when: false
+#   template:
+#     src: "{{ role_path }}/templates/inventory.ini.j2"
+#     dest: "{{ ansible_inventory_file }}"
+
+# # - name: "Update ansible inventory file: print all_containers variable"
+# #   debug:
+# #     msg: "{{ all_containers_list }}"
+
+
+# - name: "Update ansible inventory file: write to file"
+#   changed_when: false
+#   blockinfile:
+#     path: "{{ ansible_inventory_file }}"
+#     #insertafter: '^\[{{ item.instancetype}}]'
+#     insertafter: "BOF"
+#     block: |
+#       [{{ item.instancetype }}]
+#       {{ item.instances }}
+      
+#     state: present
+#     marker: "# {mark} ANSIBLE MANAGED BLOCK {{item.instancetype}}"
+#   with_items:
+#     - { instancetype: uf,   instances: "{{ all_containers_list | regex_findall('.*uf.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: hf,   instances: "{{ all_containers_list | regex_findall('.*hf.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: monitoringconsole,        instances: "{{ all_containers_list | regex_findall('.*mc.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: clustermanager,        instances: "{{ all_containers_list | regex_findall('.*cm.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: search,           instances: "{{ all_containers_list | regex_findall('.*sh.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: indexers,               instances: "{{ all_containers_list | regex_findall('.*idx.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: deploymentserver,     instances: "{{ all_containers_list | regex_findall('.*ds.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: shdeployer,              instances: "{{ all_containers_list | regex_findall('.*shc.*',ignorecase=True) | join('\n') }}" }
+#     #- { instancetype: full,  instances: "{{ all_containers_list | regex_findall('.*dmc.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: licensemaster,   instances: "{{ all_containers_list | regex_findall('.*lm.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: full,  instances: "{{ all_containers_list | regex_findall('(.*IDX.*|.*DS.*|.*SH.*|.*CM.*|.*LM.*|.*MC.*|.*DMC.*|.*hf.*)', ignorecase=True) | join('\n') }}" } # ignore UF's, as they don't need Splunk Enterprise installed, whereas the others do
+    

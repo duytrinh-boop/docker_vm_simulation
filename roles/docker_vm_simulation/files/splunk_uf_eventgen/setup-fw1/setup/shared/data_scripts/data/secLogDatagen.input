@@ -1,0 +1,7 @@
+#secure log datagen config file
+#host: list of hosts
+#users: list of user with corrosponding ip & weight <username>:<ip>:<weight>
+#	arrange users from lightest to heaviest
+
+hosts = www1, www2, www3, network_syslog1, mailsv1
+users = sleepy:192.168.22.22:1, dopey:192.168.169.170:3, doc:192.168.1.2:6

@@ -1,0 +1,9 @@
+---
+global_bashrc: /etc/bashrc
+chk_config_cmd: chkconfig --add disable-thp
+
+#Dockerfile variables
+linux_distro_package_manager: dnf
+docker_entrypoint_filename: "docker-entrypoint_rhel.sh"
+default_packages: "systemd systemd-sysv dbus openssh-server sudo acl vim python3 python3-pip nmap-ncat rsync createrepo coreutils curl mailx git wget procps tar"
+linux_distro_family_openssh_service_name: sshd

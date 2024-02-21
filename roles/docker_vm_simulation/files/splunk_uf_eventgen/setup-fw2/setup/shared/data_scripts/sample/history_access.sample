@@ -1,0 +1,527 @@
+Dec 01, 2010 1:02:47 PM
+Address=1.1.1.R2
+Address_Description="server room"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 12:55:52 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 12:50:49 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 12:45:40 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 12:27:40 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 12:24:36 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 12:16:27 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 12:16:03 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 12:11:31 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 12:10:17 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 12:04:59 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 12:03:21 PM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 11:59:53 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 11:52:47 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 11:36:56 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 11:36:29 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 11:36:01 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 11:07:22 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 10:35:06 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 10:31:46 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 10:29:05 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 10:28:44 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 10:17:53 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 10:16:48 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 10:14:29 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 10:09:20 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 10:06:43 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 10:03:53 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 10:03:03 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 10:01:28 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 9:56:45 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 9:56:20 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 9:53:45 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 9:48:26 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 9:47:20 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 9:45:23 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 9:43:22 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+"Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 9:36:40 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 9:33:36 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 9:32:36 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 9:29:40 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 9:28:26 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 9:22:31 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 9:21:03 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 9:18:57 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 9:16:13 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 9:14:27 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 9:14:13 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 9:10:19 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 9:03:30 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 9:03:11 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 9:02:29 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 8:57:45 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 8:57:04 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 8:53:48 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 8:47:41 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 8:42:44 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 8:40:39 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 8:36:17 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 8:31:28 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 8:31:27 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 8:29:34 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 8:27:46 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 8:26:42 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 8:25:54 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 8:23:45 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 8:22:42 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 8:14:44 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 8:00:21 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 7:57:38 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 7:57:31 AM
+Address=1.1.0.R1
+Address_Description="north lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 7:55:44 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 7:54:41 AM
+Address=1.1.1.R1
+Address_Description="rear elevator lobby"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 7:49:45 AM
+Address=1.1.0.R1
+Address_Description="north lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 7:47:43 AM
+Address=1.1.3.R1
+Address_Description="north courtyard (left)"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 7:47:39 AM
+Address=1.1.3.R1
+Address_Description="north courtyard (left)"
+Device="Proximity Reader"
+Event_Description="Access Denied: Facility - Not in Database"
+Dec 01, 2010 7:40:47 AM
+Address=1.1.3.R1
+Address_Description="north courtyard (left)"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 7:40:45 AM
+Address=1.1.3.R1
+Address_Description="north courtyard (left)"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 7:36:29 AM
+Address=1.1.0.R1
+Address_Description="north lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 7:34:42 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 7:33:51 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy
+Dec 01, 2010 7:29:31 AM
+Address=1.1.0.R1
+Address_Description="north lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 7:26:59 AM
+Address=1.1.0.R1
+Address_Description="north lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sneezy
+Dec 01, 2010 7:13:34 AM
+Address=1.1.3.R1
+Address_Description="north courtyard (left)"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=grumpy
+Dec 01, 2010 7:13:23 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=happy
+Dec 01, 2010 6:59:27 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=bashful
+Dec 01, 2010 1:01:06 AM
+Address=1.1.3.R1
+Address_Description="north courtyard (left)"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=doc
+Dec 01, 2010 1:00:24 AM
+Address=1.1.2.R1
+Address_Description="south lobby door"
+Device="Proximity Reader"
+Event_Description="Access Granted: Door Used" 
+User=sleepy

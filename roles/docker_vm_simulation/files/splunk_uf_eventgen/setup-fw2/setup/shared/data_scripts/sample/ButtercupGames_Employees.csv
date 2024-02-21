@@ -1,0 +1,25 @@
+RFID,FIRSTNAME,LASTNAME,USERNAME,EMAIL,DEPT,LOCATION,IP,HOSTNAME,SPLUNKROLE,CLOCK
+249772079712,Louis,Sagers,lsagers,lsagers@buttercupgames.com,SecOps,Boston,10.3.10.21,BG02-lsagers,powerU,R
+108423575302,Allen,Pucci,apucci,apucci@buttercupgames.com,Sales,Boston,10.3.10.53,BG02-apucci,powerU,R
+672903009231,Dwight,Hale,dhale,dhale@buttercupgames.com,Sales,Boston,10.3.10.241,BG02-dhale,powerU,R
+398009643042,Phyllis,Bunch,pbunch,pbunch@buttercupgames.com,ITOps,Boston,10.3.10.227,BG02-pbunch,powerU,R
+374765319282,Enrique,Maxwell,emaxwell,emaxwell@buttercupgames.com,ITOps,Boston,10.3.10.46,BG02-emaxwell,powerU,E
+227128834140,David,Johnson,djohnson,djohnson@buttercupgames.com,Engineering,Boston,10.3.10.180,BG02-djohnson,powerU,L
+371211812887,Galina,Zuyeva,gzuyeva,gzuyeva@buttercupgames.com,Engineering,Boston,10.3.10.67,BG02-gzuyeva,powerU,R
+417852300683,Amanda,Curry,acurry,acurry@buttercupgames.com,SecOps,San Francisco,10.1.10.252,BG01-acurry,powerU,R
+542830538161,Alan,Dombrowski,adombrowski,adombrowski@buttercupgames.com,SecOps,San Francisco,10.1.10.129,BG01-adombrowski,powerU,R
+768166372290,Cerys,Farrell,cfarrell,cfarrell@buttercupgames.com,Sales,San Francisco,10.1.10.107,BG01-cfarrell,powerU,R
+153218951159,Placido,Toscani,ptoscani,ptoscani@buttercupgames.com,Sales,San Francisco,10.1.10.38,BG01-ptoscani,powerU,R
+994499284304,Ian,King,iking,iking@buttercupgames.com,Sales,San Francisco,10.1.10.201,BG01-iking,powerU,R
+520156890727,Bao,Lu,blu,blu@buttercupgames.com,Marketing,San Francisco,10.1.10.100,BG01-blu,User,R
+727896988001,Lien,Teng,lteng,lteng@buttercupgames.com,ITOps,San Francisco,10.1.10.15,BG01-lteng,admin,E
+936901629743,Gabriel,Voronoff,gvoronoff,gvoronoff@buttercupgames.com,ITOps,San Francisco,10.1.10.163,BG01-gvoronoff,admin,E
+230876363319,Meng,Yuan,myuan,myuan@buttercupgames.com,Engineering,San Francisco,10.1.10.172,BG01-myuan,powerU,L
+271108583080,Patrick,Callahan,pcallahan,pcallahan@buttercupgames.com,Engineering,San Francisco,10.1.10.98,BG01-pcallahan,powerU,L
+569361105570,Kathleen,Percy,kpercy,kpercy@buttercupgames.com,Compliance Officer,San Francisco,10.1.10.216,BG01-kpercy,powerU,R
+145297537706,Nigella,Pearce,npearce,npearce@buttercupgames.com,SecOps,London,10.2.10.70,BG03-npearce,powerU,R
+632071692298,Yanto,Owen,yowen,yowen@buttercupgames.com,Sales,London,10.2.10.170,BG03-yowen,powerU,R
+862417886973,Finlay,Bryan,fbryan,fbryan@buttercupgames.com,Sales,London,10.2.10.166,BG03-fbryan,powerU,R
+890313901800,Bradley,Hussain,bhussain,bhussain@buttercupgames.com,ITOps,London,10.2.10.22,BG03-bhussain,powerU,E
+425932411002,Naomi,Sharpe,nsharpe,nsharpe@buttercupgames.com,ITOps,London,10.2.10.163,BG03-nsharpe,powerU,L
+963871339460,Rao,Jayaraman,rjayaraman,rjayaraman@buttercupgames.com,Engineering,London,10.2.10.74,BG03-rjayaraman,powerU,R

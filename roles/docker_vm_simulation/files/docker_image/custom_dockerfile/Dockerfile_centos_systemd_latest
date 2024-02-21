@@ -1,0 +1,27 @@
+FROM centos_systemd:latest
+
+# Env & Arg variables
+ARG USERNAME=ansible
+ARG USERPASS=ansible
+EXPOSE 22
+
+RUN yum update -y 
+RUN yum install -y systemd systemd-sysv dbus openssh-server sudo acl vim python3 python3-pip nmap-ncat rsync createrepo coreutils curl mailx git wget procps tar bind-utils c-ares fontconfig java-1.8.0-openjdk-headless libicu libxslt mailcap net-tools xmlsec1 xmlsec1-openssl zip ntp, ntpdate, perl, policycoreutils-python cronie gnutls libevent glusterfs glusterfs-api glusterfs-cli glusterfs-client-xlators glusterfs-extra-xlators glusterfs-coreutils glusterfs-devel glusterfs-events glusterfs-fuse glusterfs-libs glusterfs-server python2-gluster userspace-rcu
+
+
+# Add a non-root user & set password
+RUN useradd -ms /bin/bash $USERNAME
+
+# Create the ssh directory and authorized_keys file
+USER $USERNAME
+RUN mkdir /home/$USERNAME/.ssh
+COPY ./ssh_keys/splunk_docker_key.id.pub /home/$USERNAME/.ssh/authorized_keys
+
+USER root
+RUN chown $USERNAME /home/$USERNAME/.ssh/authorized_keys && \
+    chmod 600 /home/$USERNAME/.ssh/authorized_keys
+RUN echo "${USERNAME} ALL=(ALL) NOPASSWD: ALL " >> /etc/sudoers
+
+COPY ./entrypoint/docker-entrypoint_rhel.sh /docker-entrypoint_rhel.sh
+RUN chmod +x /docker-entrypoint_rhel.sh
+ENTRYPOINT ["/docker-entrypoint_rhel.sh"]

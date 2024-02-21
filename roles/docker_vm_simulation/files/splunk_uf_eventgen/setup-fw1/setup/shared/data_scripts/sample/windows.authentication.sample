@@ -1,0 +1,2639 @@
+02/19/10 10:17:13 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-6444
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=931180
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0x1AAE4638)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{4dc541a3-d7b1-8ff8-265d-52f9ef4fdf56}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.165.144
+	Source Port:	4603
+02/19/10 09:17:11 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-2699
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=930901
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0x19BE2DBA)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{7a32c4a0-cec8-30d2-2187-1d3ec926a4fe}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.149
+	Source Port:	0
+02/19/10 09:05:22 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-2401
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=930858
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0x19878B67)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{6e0c8623-d3b8-6644-c671-8840b39ff05a}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.165.146
+	Source Port:	1222
+02/19/10 06:02:23 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-6371
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=930125
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0x15E5B95A)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{522f83ae-3ade-c701-521c-d467ac2ce095}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.235
+	Source Port:	0
+02/18/10 11:58:04 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=dopey
+Sid=S-1-5-21-57989841-920026266-725345543-6404
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=928578
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0xDE4E1E4)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{a99d0b83-5f2b-d550-ee62-270563bfa551}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.232
+	Source Port:	0
+02/18/10 11:02:16 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=grumpy
+Sid=S-1-5-21-57989841-920026266-725345543-13226
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=928330
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0xCFDDF6E)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{1ed6c1c5-eff1-d8ac-7630-cdac4cb84148}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.176
+	Source Port:	0
+02/18/10 04:57:43 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=happy
+Sid=S-1-5-21-57989841-920026266-725345543-13204
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=926809
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0x2F1377E)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{28aecda4-40be-bc3d-5b0f-72c603043c32}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.148
+	Source Port:	0
+02/18/10 04:27:48 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-13391
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=926673
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0x1BFDF74)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{5ecb7f27-4f09-9f92-2f09-33bfae58fee1}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.118
+	Source Port:	0
+02/18/10 04:11:32 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-5900
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=926577
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x1,0x11C5CFE)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{de75afea-a3d2-d417-fb73-679947b8f587}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.145
+	Source Port:	0
+02/18/10 09:28:04 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-13256
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=924881
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xF43CD954)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{530ea6a7-ef36-f947-8945-879cc1838144}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.3.1.23
+	Source Port:	3698
+02/18/10 06:07:11 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-13244
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=923960
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xEF1CEC54)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{e2f64bf2-6e8b-8b80-11a8-bb4b01fd40ff}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.234
+	Source Port:	0
+02/17/10 07:54:50 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=dopey
+Sid=S-1-5-21-57989841-920026266-725345543-13194
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=921120
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xDF474143)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{b402bf6e-85b7-8c70-4dc1-aa6c725dd047}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.129
+	Source Port:	0
+02/17/10 05:49:10 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=grumpy
+Sid=S-1-5-21-57989841-920026266-725345543-6325
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=920598
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xDBFD9791)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{cf248507-6731-ed37-75c5-ee8b0bca29b9}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.165.147
+	Source Port:	4605
+02/17/10 06:02:43 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=happy
+Sid=S-1-5-21-57989841-920026266-725345543-6420
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=917535
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xC9D7E2F2)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{f30878ca-9305-1e69-fa1b-efd174c0cf5e}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.191
+	Source Port:	0
+02/16/10 05:26:25 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-13124
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=913950
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xB65AD328)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{826a4ad7-a6ab-80ae-f579-4f6591becbae}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.165.156
+	Source Port:	1115
+02/16/10 02:01:56 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-13252
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=913099
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xB17A9D69)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{099e4276-6f04-44e4-a2b8-93ced4fca558}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.181
+	Source Port:	0
+02/16/10 10:59:34 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-6402
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=912296
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xAD3075FB)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{2dc0f422-6abc-41b0-026c-9066925f4322}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.1.145
+	Source Port:	1213
+02/16/10 09:18:38 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-2699
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=911820
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xAACD12DE)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{9882e418-8d05-c743-b867-b8ffe6bce80d}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.125
+	Source Port:	0
+02/16/10 09:14:52 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=dopey
+Sid=S-1-5-21-57989841-920026266-725345543-13124
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=911811
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xAAB674DD)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{29d56e71-aeed-8bee-18d3-f1b5404ccb81}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.165.140
+	Source Port:	1065
+02/15/10 10:06:23 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=grumpy
+Sid=S-1-5-21-57989841-920026266-725345543-6371
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=905831
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x891E3AD2)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{6400be0c-7a37-1fdb-60c8-d4035fdb3346}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.8
+	Source Port:	0
+02/15/10 07:00:36 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=happy
+Sid=S-1-5-21-57989841-920026266-725345543-13204
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=905021
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x8440E7E8)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{179e241f-e8e2-6a62-89ae-218c4f2b437c}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.136
+	Source Port:	1119
+02/13/10 07:58:19 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-4624
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=894905
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x4F47DB45)
+	Logon Type:	3
+	Logon Process:	NtLmSsp 
+	Authentication Package:	NTLM
+	Workstation Name:	US-003
+	Logon GUID:	-
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.6
+	Source Port:	1968
+02/12/10 05:23:43 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-6325
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=887006
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x29ED5005)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{4c9e7e87-35fa-cc27-eeb1-4d442fe782ee}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.165.140
+	Source Port:	1072
+02/11/10 11:27:51 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-6523
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=877952
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xC061C742)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{1f2ea875-34d7-a6df-9905-04b4411cc0c0}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.66
+	Source Port:	0
+02/11/10 10:54:37 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-6402
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=877774
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xBF847ADB)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{2b4b2394-0987-983e-de92-dfffa047c815}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.1.139
+	Source Port:	1182
+02/10/10 06:14:06 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=dopey
+Sid=S-1-5-21-57989841-920026266-725345543-2699
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=873171
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xA9103D09)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{5e03073b-6594-2892-b076-86da949199c9}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.117
+	Source Port:	0
+02/10/10 06:11:42 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=grumpy
+Sid=S-1-5-21-57989841-920026266-725345543-6136
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=873163
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xA903188B)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{250daa7e-cb3c-c275-8eb4-5726289cc943}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.48
+	Source Port:	1615
+02/09/10 05:17:00 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=happy
+Sid=S-1-5-21-57989841-920026266-725345543-6136
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=865259
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x813C1D63)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{b9996a24-62a9-f1f7-3e01-2c362247f047}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.41
+	Source Port:	3799
+02/09/10 02:50:34 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-13344
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=864590
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x7C4403F7)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{d8e5a074-7ca1-f1c6-ed46-3f81904c880c}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.123
+	Source Port:	0
+02/08/10 06:54:27 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-6402
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=858719
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x59D15053)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{98d45ab4-b90a-3b65-c533-fcd16afb5f55}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.1.133
+	Source Port:	3581
+02/08/10 05:28:19 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-6136
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=858279
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x57545B85)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{ed522423-5065-e3fb-4a43-0f5416e6d08d}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.38
+	Source Port:	4746
+02/08/10 04:28:59 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-2388
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=857951
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x555A958A)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{56eefbc2-b1c3-b5bd-fce6-93d7e98c58dd}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.36
+	Source Port:	0
+02/08/10 12:32:52 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=dopey
+Sid=S-1-5-21-57989841-920026266-725345543-6290
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=856675
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x4FD970ED)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{81391594-c510-32db-3981-ebc8123f6fd6}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.103
+	Source Port:	0
+02/05/10 01:39:01 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=grumpy
+Sid=S-1-5-21-57989841-920026266-725345543-4407
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=837970
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xEB2923F)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{f33ebb4a-e884-2662-4167-ce438b57a590}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.165
+	Source Port:	3236
+02/05/10 12:29:24 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=happy
+Sid=S-1-5-21-57989841-920026266-725345543-6420
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=837695
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xCB36653)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{a9516805-a7bd-bbaf-b6b3-f831a1fe8a38}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.140.0.162
+	Source Port:	0
+02/04/10 12:16:15 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-6117
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=831899
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0xC,0x4F62B1D7)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{30a1d0f6-f077-8bf8-e827-d695368bfcac}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.165.146
+	Source Port:	1191
+02/04/10 09:33:55 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-6136
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=831239
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0xC,0x4B09B15B)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{5dadcf04-1316-bcb4-2597-3d1ffacc4f5c}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.37
+	Source Port:	4822
+02/03/10 04:21:52 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-6136
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=827154
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0xC,0x3377F9F5)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{4b9402f3-cc93-dc1f-3dbe-0ae7db4f2879}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.39
+	Source Port:	1050
+02/02/10 12:23:02 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-8476
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=826434
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0xC,0x97875FB)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{e170f144-765a-9698-be19-01c209e796ba}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.226
+	Source Port:	0
+02/02/10 12:23:02 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=dopey
+Sid=S-1-5-21-57989841-920026266-725345543-8476
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=826436
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0xC,0x978778C)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{194e1ffb-92b1-bd1c-654b-bcc044f84d68}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	-
+	Source Port:	-
+02/02/10 01:13:20 AM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=grumpy
+Sid=S-1-5-21-57989841-920026266-725345543-8522
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=826229
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0xB,0xF739B09A)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{e9a20510-2fc4-b91d-8fd7-6f20a3572cb4}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.31
+	Source Port:	0
+02/01/10 06:56:18 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=happy
+Sid=S-1-5-21-57989841-920026266-725345543-6402
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=826126
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0xB,0xEDFC9B50)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{293c09d7-0375-50ac-5a2a-8c5b6f6f3db6}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.1.125
+	Source Port:	2935
+02/01/10 04:12:33 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-6136
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=826054
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0xB,0xEA3DF70A)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{2a9e158d-3662-546b-b600-84f64aa97b2a}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.29
+	Source Port:	4056
+09/11/09 07:03:29 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10110359
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-2664
+SidType=1
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x25287DCC)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{b185029c-05f0-dc68-02a0-9898857f7e73}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.116
+	Source Port:	0
+09/11/09 06:47:11 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10109781
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-2699
+SidType=1
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x25239071)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{8484d438-127c-8500-6905-7e85deb7691e}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.109
+	Source Port:	0
+09/11/09 06:00:04 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10108189
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-4404
+SidType=1
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x2514EDF2)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{afe0b602-46c9-5584-27c7-24a8c3d76f57}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.97
+	Source Port:	0
+09/11/09 05:55:18 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10108004
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=dopey
+Sid=S-1-5-21-57989841-920026266-725345543-2777
+SidType=1
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x25137814)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{ee35506c-ed8a-84c6-bb8f-3c04a9e7909e}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.127
+	Source Port:	0
+09/11/09 05:52:28 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10107886
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=grumpy
+Sid=S-1-5-21-57989841-920026266-725345543-4686
+SidType=1
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x2512A5A6)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{ab120ba3-16cc-1b1b-352f-0ec6f1686376}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.93
+	Source Port:	0
+09/11/09 05:40:12 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10107516
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=happy
+Sid=S-1-5-21-57989841-920026266-725345543-6136
+SidType=1
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x250EFCF8)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{282bb9f7-c095-ef91-e204-754eff19ca16}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.243
+	Source Port:	1402
+09/11/09 05:19:15 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10106763
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-6367
+SidType=1
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x2507B7A3)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{0dbdfdd7-2fdb-eabd-d160-300d47b97c88}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.63
+	Source Port:	0
+09/11/09 05:16:30 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10106681
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-5847
+SidType=1
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x2506DB56)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{b8bc36fc-c926-b35d-1927-e985822d5cb6}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.58
+	Source Port:	0
+09/11/09 05:06:21 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10106236
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-4388
+SidType=1
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x2503A362)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{61663894-5b94-dd70-9fb6-2e333ef2fd4a}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.53
+	Source Port:	2397
+09/11/09 05:04:13 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ACMEAPP
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-2583
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=598461
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xFAD8A8CB)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{bd243803-0698-97c6-9b81-d89fbffcb405}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.239
+	Source Port:	1030
+09/11/09 05:03:26 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10106123
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=dopey
+Sid=S-1-5-21-57989841-920026266-725345543-6366
+SidType=1
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x2502D45B)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{5f35967f-1c88-7f90-4172-85761fa6afca}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.101
+	Source Port:	0
+09/11/09 05:00:40 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10106037
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=grumpy
+Sid=S-1-5-21-57989841-920026266-725345543-6290
+SidType=1
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x2501EB2A)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{28804404-58f1-b116-b754-089d9c1443c5}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.91
+	Source Port:	0
+09/11/09 04:58:05 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10105903
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=happy
+Sid=S-1-5-21-57989841-920026266-725345543-6292
+SidType=1
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x25011AB7)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{d0068dd7-7038-206d-2dbd-216c9eea3243}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.88
+	Source Port:	2497
+09/11/09 04:42:44 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10105321
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=bashful
+Sid=S-1-5-21-57989841-920026266-725345543-8457
+SidType=1
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x24FC46CB)
+	Logon Type:	3
+	Logon Process:	IAS
+	Authentication Package:	MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+	Workstation Name:	
+	Logon GUID:	-
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	(0x0,0x3E7)
+	Caller Process ID: 828
+	Transited Services: -
+	Source Network Address:	-
+	Source Port:	-
+09/11/09 04:23:06 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10104528
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=doc
+Sid=S-1-5-21-57989841-920026266-725345543-9127
+SidType=1
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x24F63050)
+	Logon Type:	3
+	Logon Process:	IAS
+	Authentication Package:	MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+	Workstation Name:	
+	Logon GUID:	-
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	(0x0,0x3E7)
+	Caller Process ID: 828
+	Transited Services: -
+	Source Network Address:	-
+	Source Port:	-
+09/11/09 04:17:56 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10104317
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=sleepy
+Sid=S-1-5-21-57989841-920026266-725345543-6368
+SidType=1
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x24F49755)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{4f099bd4-cffe-8ef8-0e27-18ddd8a8f81f}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.1.60
+	Source Port:	0
+09/11/09 04:17:35 PM
+LogName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+SourceName=Security
+RecordNumber=10104310
+Category=2
+CategoryString=Logon/Logoff
+ComputerName=ACMEDC01
+User=sneezy
+Sid=S-1-5-21-57989841-920026266-725345543-6263
+SidType=1
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x24F47620)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{29fffc22-923f-b177-a59a-7bb56c4b2ed0}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	10.127.100.241
+	Source Port:	3240
+09/11/09 04:14:55 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC02
+User=dopey
+Sid=S-1-5-21-4286658467-4243823776-1656315635-23289
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=59687666
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6AEA6142)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{df6030a4-9807-8da3-b34e-8cb2258a8f74}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.136.102
+	Source Port:	2500
+09/11/09 04:14:51 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC01
+User=grumpy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-20044
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=532022519
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xD0B4C76A)
+	Logon Type:	3
+	Logon Process:	Advapi  
+	Authentication Package:	Negotiate
+	Workstation Name:	SC-DC01
+	Logon GUID:	-
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	(0x0,0x3E7)
+	Caller Process ID: 560
+	Transited Services: -
+	Source Network Address:	192.168.18.252
+	Source Port:	19019
+09/11/09 04:14:50 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC01
+User=happy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-23288
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=532022509
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xD0B4C687)
+	Logon Type:	3
+	Logon Process:	IAS
+	Authentication Package:	MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+	Workstation Name:	
+	Logon GUID:	-
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	(0x0,0x3E7)
+	Caller Process ID: 1172
+	Transited Services: -
+	Source Network Address:	-
+	Source Port:	-
+09/11/09 04:14:48 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC02
+User=bashful
+Sid=S-1-5-21-4286658467-4243823776-1656315635-10205
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=563596593
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xA296679F)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{5a668156-bc8a-3f7a-043d-6fbf7aafa96f}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.136.110
+	Source Port:	3770
+09/11/09 04:14:45 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC01
+User=doc
+Sid=S-1-5-21-4286658467-4243823776-1656315635-14005
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=532022430
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xD0B4A59F)
+	Logon Type:	3
+	Logon Process:	Advapi  
+	Authentication Package:	Negotiate
+	Workstation Name:	SC-DC01
+	Logon GUID:	-
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	(0x0,0x3E7)
+	Caller Process ID: 560
+	Transited Services: -
+	Source Network Address:	192.168.16.30
+	Source Port:	59714
+09/11/09 04:14:41 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC01
+User=sleepy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-20858
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=532022387
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xD0B48727)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{c56b8b91-e110-ea85-9aff-6efcc7172034}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.138.66
+	Source Port:	1276
+09/11/09 04:14:23 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC02
+User=sneezy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-19996
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=59687559
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6AEA0000)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{6b1e8b4f-7f03-2296-c7c0-9e0da47413f3}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.140.70
+	Source Port:	3231
+09/11/09 04:14:22 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC02
+User=dopey
+Sid=S-1-5-21-4286658467-4243823776-1656315635-13691
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=563596140
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xA295CFA7)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{1b7f8a2b-a5d1-e491-7dab-8f7cae17a105}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.129.49
+	Source Port:	2007
+09/11/09 04:14:19 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC03
+User=grumpy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-2092
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=54604530
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6AFFC809)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{1ead8f20-d162-7ee6-4190-f5b48ea0cfd6}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.23.8.110
+	Source Port:	2830
+09/11/09 04:14:52 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC01
+User=happy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-10188
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=532022545
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xD0B4CFCD)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{d6afe4d7-6b50-9605-dfc3-50bdc0eae40f}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.142.58
+	Source Port:	0
+09/11/09 04:14:52 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC01
+User=bashful
+Sid=S-1-5-21-4286658467-4243823776-1656315635-20407
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=132968495
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x875BD5D0)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{8dc9f39e-353b-155e-0585-3db54ef83f3f}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.157.33
+	Source Port:	0
+09/11/09 04:14:51 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC03
+User=doc
+Sid=S-1-5-21-4286658467-4243823776-1656315635-2293
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=54604628
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6B005243)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{a1e85e79-b1bf-f90b-45a0-e0b99c31fc2a}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.132.90
+	Source Port:	3643
+09/11/09 04:14:51 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC02
+User=sleepy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-20407
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=59687650
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6AEA5E73)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{34c506ba-0fca-1c83-b00c-2905ca072c59}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.157.33
+	Source Port:	0
+09/11/09 04:14:51 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC01
+User=sneezy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-8130
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=132968488
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x875BD55C)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{ffd5c6b1-e296-9003-34fc-4c658d418a21}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.132.170
+	Source Port:	0
+09/11/09 04:14:51 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC01
+User=dopey
+Sid=S-1-5-21-4286658467-4243823776-1656315635-14063
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=132968489
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x875BD576)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{7050d2ae-535a-cca1-9079-af086a988bf3}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.134.86
+	Source Port:	2568
+09/11/09 04:14:50 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC01
+User=grumpy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-1486
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=532022494
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xD0B4C098)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{bfa514ed-9fdb-8657-03f1-d674a904704a}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.16.5.143
+	Source Port:	2445
+09/11/09 04:14:50 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC03
+User=happy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-16150
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=54604605
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6B002F16)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{8c8a7794-57a0-2c00-635b-a06514f504aa}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.128.49
+	Source Port:	55519
+09/11/09 04:14:50 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC02
+User=bashful
+Sid=S-1-5-21-4286658467-4243823776-1656315635-21761
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=563596635
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xA2968003)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{472aa836-8497-bbe5-ac42-eed041eee648}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.18.144
+	Source Port:	0
+09/11/09 04:14:50 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC02
+User=doc
+Sid=S-1-5-21-4286658467-4243823776-1656315635-16150
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=59687647
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6AEA5DD0)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{8c8a7794-57a0-2c00-635b-a06514f504aa}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.128.49
+	Source Port:	55520
+09/11/09 04:14:49 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC01
+User=sleepy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-20541
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=132968483
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x875BD22C)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{557a0eac-5742-d75b-190a-d831924f5cce}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.132.93
+	Source Port:	62088
+09/11/09 04:14:49 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC01
+User=sneezy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-14169
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=132968485
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x875BD262)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{4e605a7b-f443-2414-569a-a1e4fceb3e6e}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.129.9
+	Source Port:	52052
+09/11/09 04:14:49 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC01
+User=dopey
+Sid=S-1-5-21-4286658467-4243823776-1656315635-13994
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=132968486
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x875BD271)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{f66f8996-a693-5032-3584-f07b053694bc}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.133.14
+	Source Port:	0
+09/11/09 04:14:49 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC03
+User=grumpy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-20060
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=54604603
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6B002ED4)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{1c9dec89-8233-dd57-effc-bdfdd7b95619}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.157.32
+	Source Port:	3244
+09/11/09 04:14:48 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=ASH-DC02
+User=happy
+Sid=S-1-5-7
+SidType=5
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=248683
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x60F6163)
+	Logon Type:	3
+	Logon Process:	NtLmSsp 
+	Authentication Package:	NTLM
+	Workstation Name:	ASH-PRT01
+	Logon GUID:	-
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	192.168.128.38
+	Source Port:	0
+09/11/09 04:14:48 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SF-LDAP
+User=bashful
+Sid=S-1-5-21-4286658467-4243823776-1656315635-14220
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=115323210
+Message=Successful Network Logon:
+	User Name:	bashful
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x5C910CF9)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{c185dccb-244f-53b1-c7de-4ba1c8e65e08}
+	Caller User Name:	bashful
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.136.124
+	Source Port:	50350
+09/11/09 04:14:48 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC03
+User=doc
+Sid=S-1-5-21-4286658467-4243823776-1656315635-10582
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=54604598
+Message=Successful Network Logon:
+	User Name:	doc
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6B00174D)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{9828dbe8-8f8b-ab9c-d3e9-293302f78ba8}
+	Caller User Name:	doc
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.136.106
+	Source Port:	49199
+09/11/09 04:14:48 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SC-DC01
+User=sleepy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-16223
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=532022450
+Message=Successful Network Logon:
+	User Name:	sleepy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0xD0B4AB70)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{304e9dd5-bc2d-d7fc-1894-fe61fdadd399}
+	Caller User Name:	sleepy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.23.8.80
+	Source Port:	2612
+09/11/09 04:14:48 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC02
+User=sneezy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-10582
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=59687644
+Message=Successful Network Logon:
+	User Name:	sneezy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6AEA5BA1)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{29d7e98e-f712-2aca-ce4e-46411b87e5ac}
+	Caller User Name:	sneezy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.136.106
+	Source Port:	49200
+09/11/09 04:13:54 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SF-LDAP
+User=dopey
+Sid=S-1-5-21-4286658467-4243823776-1656315635-16413
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=115322955
+Message=Successful Network Logon:
+	User Name:	dopey
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x5C904EC6)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{7e54c71b-d7dc-c585-8d33-f89264e1f85e}
+	Caller User Name:	dopey
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.130.64
+	Source Port:	52451
+09/11/09 04:13:54 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=PA-DC03
+User=grumpy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-3478
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=54604429
+Message=Successful Network Logon:
+	User Name:	grumpy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x6AFF79AD)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{97c10b66-de5c-e780-bc22-1b6e1158a6da}
+	Caller User Name:	grumpy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.140.55
+	Source Port:	49602
+09/11/09 04:13:54 PM
+LogName=Security
+SourceName=Security
+EventCode=540
+EventType=8
+Type=Success Audit
+ComputerName=SF-DC02
+User=happy
+Sid=S-1-5-21-4286658467-4243823776-1656315635-16413
+SidType=1
+Category=2
+CategoryString=Logon/Logoff
+RecordNumber=844372587
+Message=Successful Network Logon:
+	User Name:	happy
+	Domain:		MYFLOWERSHOP
+	Logon ID:		(0x0,0x92EA3CEC)
+	Logon Type:	3
+	Logon Process:	Kerberos
+	Authentication Package:	Kerberos
+	Workstation Name:	
+	Logon GUID:	{8ff21b23-3d74-cd81-ed55-094a5fa7f383}
+	Caller User Name:	happy
+	Caller MYFLOWERSHOP
+	Caller Logon ID:	-
+	Caller Process ID: -
+	Transited Services: -
+	Source Network Address:	172.24.130.65
+	Source Port:	52452

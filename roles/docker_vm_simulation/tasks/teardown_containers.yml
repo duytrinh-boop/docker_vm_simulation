@@ -1,0 +1,41 @@
+---
+- name: "get container hostnames"
+  shell: docker inspect -f '{{ '{{' }}.Config.Hostname{{ '}}' }}' $(docker container ls -af label=docker_compose_file={{ docker_compose_file_name }} -aq)
+  become: true
+  register: hostnames
+  changed_when: false
+  ignore_errors: true
+
+- name: "Clear known_hosts file"
+  lineinfile:
+    path: ~/.ssh/known_hosts
+    state: absent
+    regexp: "^{{ item }}"
+  changed_when: false
+  with_items:
+    - "{{ hostnames.stdout_lines }}"
+
+- name: "UPDATE /etc/hostsfile: get container hosts entry, formatted correctly for /etc/hosts"
+  shell: docker inspect -f '{{ '{{' }}range.NetworkSettings.Networks{{ '}}' }}{{ '{{' }}.IPAddress{{ '}}' }}{{ '{{' }}end{{ '}}' }}   {{ '{{' }}.Config.Hostname{{ '}}' }}' $(docker container ls -af label=docker_compose_file={{ docker_compose_file_name }} -aq)
+  register: host_entries
+  become: true
+  changed_when: false
+  ignore_errors: true
+
+- name: "UPDATE /etc/hostsfile: Update inventory file"
+  become: true
+  blockinfile:
+    path: /etc/hosts
+    #insertafter: '^\[{{ item.instancetype}}]'
+    insertafter: "BOF"  
+    block: |
+      {{ host_entries.stdout }}
+    state: absent
+
+- name: "Docker-Compose tear down of all containers defined in {{ docker_container_file }}"
+  community.docker.docker_compose_v2:
+    project_src: "{{ docker_compose_files_path }}"
+    files: "{{ docker_compose_file_name }}"
+    build: never
+    state: absent
+  register: output

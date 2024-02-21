@@ -1,0 +1,8 @@
+---
+global_bashrc: /etc/bash.bashrc
+
+#Dockerfile variables
+linux_distro_package_manager: apt
+docker_entrypoint_filename: "docker-entrypoint_ubuntu.sh"
+default_packages: "systemd systemd-sysv dbus dbus-user-session openssh-server whois sudo acl vim python3 python3-pip netcat iputils-ping rsync procps tar"
+linux_distro_family_openssh_service_name: ssh

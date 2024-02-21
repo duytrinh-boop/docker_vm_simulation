@@ -1,0 +1,30 @@
+FROM ubuntu:latest
+
+# Env & Arg variables
+ARG USERNAME=ansible
+ARG USERPASS=ansible
+EXPOSE 22
+
+RUN apt-get update && \
+  apt-get install -y --no-install-recommends \
+  systemd systemd-sysv dbus dbus-user-session \
+  openssh-server whois sudo acl vim \
+  python3 python3-pip netcat iputils-ping rsync procps
+
+# Add a non-root user & set password
+RUN useradd -ms /bin/bash $USERNAME
+
+
+# Create the ssh directory and authorized_keys file
+USER $USERNAME
+RUN mkdir /home/$USERNAME/.ssh
+COPY ansiblekey.pub /home/$USERNAME/.ssh/authorized_keys
+
+USER root
+RUN chown $USERNAME /home/$USERNAME/.ssh/authorized_keys && \
+    chmod 600 /home/$USERNAME/.ssh/authorized_keys
+RUN echo "${USERNAME} ALL=(ALL) NOPASSWD: ALL " >> /etc/sudoers
+
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]

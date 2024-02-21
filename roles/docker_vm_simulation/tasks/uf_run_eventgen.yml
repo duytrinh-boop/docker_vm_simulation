@@ -1,0 +1,58 @@
+---
+# Todo: Use vars to define distribution-specific packages. For now, it'll just ignore errors for any package names that aren't available for your distro.
+- name: install python2.7
+  package:
+    name: "python2"
+    state: present
+    update_cache: true
+  ignore_errors: true
+  become: true
+
+- name: copy eventgen scripts from etc/apps over to /opt/setup
+  become: true
+  copy: 
+    src: "{{ role_path }}/files/splunk_uf_eventgen/setup-fw1/setup"
+    dest: /opt
+  when: "'uf1' in inventory_hostname"
+
+- name: copy eventgen scripts from etc/apps over to /opt/setup
+  become: true
+  copy: 
+    src: "{{ role_path }}/files/splunk_uf_eventgen/setup-fw2/setup"
+    dest: /opt
+  when: "'uf2' in inventory_hostname"
+
+- name: Set execution bit
+  become: true  
+  file:
+    path: "/opt/setup/shared/data_scripts"
+    mode: u+x
+    recurse: yes
+    state: directory
+
+- name: run eventgen scripts
+  become: true
+  shell: "python2.7 /opt/setup/shared/data_scripts/{{ item }}"
+  with_items: 
+    - "1_apache_last30.py"
+    - "1_sales_entries_last30.py"
+    - "1_secure_log_last30.py"
+    #- "2_DataGen_Live_apache.py"
+    #- "2_DataGen_Live_sales_entries.py"
+    #- "2_DataGen_Live_secure_log.py"
+  when: "'uf1' in inventory_hostname"
+
+- name: run eventgen scripts
+  become: true
+  shell: "python2.7 /opt/setup/shared/data_scripts/{{ item }}"
+  with_items: 
+    - "1_cisco_mail_last30.py"
+    - "1_cisco_web_last30.py"
+    - "1_crashlog.py"
+    - "1_sales_entries_last30.py"
+    - "1_secure_log_last30.py"
+    #- "2_DataGen_Live_cisco_mail.py"
+    #- "2_DataGen_Live_cisco_web.py"
+    #- "2_DataGen_Live_sales_entries.py"
+    #- "2_DataGen_Live_secure_log.py"
+  when: "'uf2' in inventory_hostname"

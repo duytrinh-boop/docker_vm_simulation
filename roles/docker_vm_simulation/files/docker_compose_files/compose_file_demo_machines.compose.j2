@@ -1,0 +1,87 @@
+# BEGIN ANSIBLE MANAGED BLOCK
+version: "3.6"
+
+#https://splunk.github.io/docker-splunk/ADVANCED.html#install-apps
+
+## these settings can be replicated to all containers
+x-systemd-settings:
+  &systemd-settings
+  image: "{{ docker_image_custom_name }}"
+  privileged: true
+  command: bash -c "systemctl start {{ linux_distro_family_openssh_service_name }} && tail -f /dev/null"
+  stdin_open: true # docker run -i
+  tty: true        # docker run -t
+
+
+# in order to test no airgapped systems
+networks:
+  no-internet:
+    driver: bridge
+    internal: true
+
+services:
+# END ANSIBLE MANAGED BLOCK
+# BEGIN ANSIBLE MANAGED BLOCK uf3.demo
+  uf3.demo:
+    <<: *systemd-settings
+    container_name: uf3.demo
+    hostname: uf3.demo
+    labels:
+      docker_compose_file: compose_file_demo_machines
+# END ANSIBLE MANAGED BLOCK uf3.demo
+# BEGIN ANSIBLE MANAGED BLOCK uf4.demo
+  uf4.demo:
+    <<: *systemd-settings
+    container_name: uf4.demo
+    hostname: uf4.demo
+    labels:
+      docker_compose_file: compose_file_demo_machines
+# END ANSIBLE MANAGED BLOCK uf4.demo
+# BEGIN ANSIBLE MANAGED BLOCK lm1.demo
+  lm1.demo:
+    <<: *systemd-settings
+    container_name: lm1.demo
+    hostname: lm1.demo
+    labels:
+      docker_compose_file: compose_file_demo_machines
+# END ANSIBLE MANAGED BLOCK lm1.demo
+# BEGIN ANSIBLE MANAGED BLOCK cm1.demo
+  cm1.demo:
+    <<: *systemd-settings
+    container_name: cm1.demo
+    hostname: cm1.demo
+    labels:
+      docker_compose_file: compose_file_demo_machines
+# END ANSIBLE MANAGED BLOCK cm1.demo
+# BEGIN ANSIBLE MANAGED BLOCK idx1.demo
+  idx1.demo:
+    <<: *systemd-settings
+    container_name: idx1.demo
+    hostname: idx1.demo
+    labels:
+      docker_compose_file: compose_file_demo_machines
+# END ANSIBLE MANAGED BLOCK idx1.demo
+# BEGIN ANSIBLE MANAGED BLOCK idx2.demo
+  idx2.demo:
+    <<: *systemd-settings
+    container_name: idx2.demo
+    hostname: idx2.demo
+    labels:
+      docker_compose_file: compose_file_demo_machines
+# END ANSIBLE MANAGED BLOCK idx2.demo
+# BEGIN ANSIBLE MANAGED BLOCK sh1.demo
+  sh1.demo:
+    <<: *systemd-settings
+    container_name: sh1.demo
+    hostname: sh1.demo
+    labels:
+      docker_compose_file: compose_file_demo_machines
+# END ANSIBLE MANAGED BLOCK sh1.demo
+# BEGIN ANSIBLE MANAGED BLOCK ds1.demo
+  ds1.demo:
+    <<: *systemd-settings
+    container_name: ds1.demo
+    hostname: ds1.demo
+    labels:
+      docker_compose_file: compose_file_demo_machines
+# END ANSIBLE MANAGED BLOCK ds1.demo

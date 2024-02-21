@@ -1,0 +1,87 @@
+# BEGIN ANSIBLE MANAGED BLOCK
+version: "3.6"
+
+#https://splunk.github.io/docker-splunk/ADVANCED.html#install-apps
+
+## these settings can be replicated to all containers
+x-systemd-settings:
+  &systemd-settings
+  image: "{{ docker_image_custom_name }}"
+  privileged: true
+  command: bash -c "systemctl start {{ linux_distro_family_openssh_service_name }} && tail -f /dev/null"
+  stdin_open: true # docker run -i
+  tty: true        # docker run -t
+
+
+# in order to test no airgapped systems
+networks:
+  no-internet:
+    driver: bridge
+    internal: true
+
+services:
+# END ANSIBLE MANAGED BLOCK
+# BEGIN ANSIBLE MANAGED BLOCK uf1.lab
+  uf1.lab:
+    <<: *systemd-settings
+    container_name: uf1.lab
+    hostname: uf1.lab
+    labels:
+      docker_compose_file: deploymentlab
+# END ANSIBLE MANAGED BLOCK uf1.lab
+# BEGIN ANSIBLE MANAGED BLOCK uf2.lab
+  uf2.lab:
+    <<: *systemd-settings
+    container_name: uf2.lab
+    hostname: uf2.lab
+    labels:
+      docker_compose_file: deploymentlab
+# END ANSIBLE MANAGED BLOCK uf2.lab
+# BEGIN ANSIBLE MANAGED BLOCK ds.lab
+  ds.lab:
+    <<: *systemd-settings
+    container_name: ds.lab
+    hostname: ds.lab
+    labels:
+      docker_compose_file: deploymentlab
+# END ANSIBLE MANAGED BLOCK ds.lab
+# BEGIN ANSIBLE MANAGED BLOCK cm.lab
+  cm.lab:
+    <<: *systemd-settings
+    container_name: cm.lab
+    hostname: cm.lab
+    labels:
+      docker_compose_file: deploymentlab
+# END ANSIBLE MANAGED BLOCK cm.lab
+# BEGIN ANSIBLE MANAGED BLOCK sh1.lab
+  sh1.lab:
+    <<: *systemd-settings
+    container_name: sh1.lab
+    hostname: sh1.lab
+    labels:
+      docker_compose_file: deploymentlab
+# END ANSIBLE MANAGED BLOCK sh1.lab
+# BEGIN ANSIBLE MANAGED BLOCK idx1.lab
+  idx1.lab:
+    <<: *systemd-settings
+    container_name: idx1.lab
+    hostname: idx1.lab
+    labels:
+      docker_compose_file: deploymentlab
+# END ANSIBLE MANAGED BLOCK idx1.lab
+# BEGIN ANSIBLE MANAGED BLOCK idx2.lab
+  idx2.lab:
+    <<: *systemd-settings
+    container_name: idx2.lab
+    hostname: idx2.lab
+    labels:
+      docker_compose_file: deploymentlab
+# END ANSIBLE MANAGED BLOCK idx2.lab
+# BEGIN ANSIBLE MANAGED BLOCK idx3.lab
+  idx3.lab:
+    <<: *systemd-settings
+    container_name: idx3.lab
+    hostname: idx3.lab
+    labels:
+      docker_compose_file: deploymentlab
+# END ANSIBLE MANAGED BLOCK idx3.lab

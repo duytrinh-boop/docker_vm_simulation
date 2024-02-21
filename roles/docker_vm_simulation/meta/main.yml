@@ -1,0 +1,29 @@
+galaxy_info:
+  author: Tin Tin Trinh <tin.tin.trinh@atea.no>
+  description: Role to simulate linux VM's. 
+  company: Atea AS
+
+  license: Apache-2.0
+
+  min_ansible_version: 2.7
+
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+
+  galaxy_tags:
+    - docker
+    - linux
+    - splunk
+    
+dependencies: []

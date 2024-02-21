@@ -1,0 +1,17 @@
+---
+- name: Fill in variables in Docker-Compose file
+  template: 
+    src: "{{ docker_compose_files_path }}/{{ docker_compose_file_name }}.compose.j2"
+    dest: "{{ docker_compose_files_path }}/{{ docker_compose_file_name }}"
+# State: compose file is ready to be used
+
+
+- name: "Docker-Compose up: spin up containers from compose file"
+  #become: true
+  community.docker.docker_compose_v2:
+    project_src: "{{ docker_compose_files_path }}"
+    files: "{{ docker_compose_file_name }}"
+    build: always
+    state: present
+  register: output
+# State: containers are Up and running

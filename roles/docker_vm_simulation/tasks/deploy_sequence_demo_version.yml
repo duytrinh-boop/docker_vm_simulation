@@ -1,0 +1,22 @@
+---
+
+- name: create ssh-keypair to be used in custom docker image
+  include_tasks: create_ssh_key.yml
+
+- name: build custom docker image from dockerfile
+  include_tasks: build_custom_image_with_distributed_splunk.yml
+
+- name: create docker compose file
+  include_tasks: build_composefile_from_list.yml
+
+- name: spin up simulated vms from compose file
+  include_tasks: spin_up_vms_from_composefile_demo.yml
+
+- name: "networking config: add ip and vm-hostname to /etc/hosts"
+  include_tasks: network_add_to_hosts_file.yml
+
+- name: "update known_hosts file"
+  include_tasks: network_update_known_hosts.yml
+
+- name: create ansible inventory file
+  include_tasks: create_ansible_inventory_file.yml

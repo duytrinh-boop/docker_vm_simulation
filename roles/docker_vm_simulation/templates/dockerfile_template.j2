@@ -1,0 +1,27 @@
+FROM {{ dockerfile_baseimage }}
+
+# Env & Arg variables
+ARG USERNAME={{ os_user_name }}
+ARG USERPASS={{ os_user_password }}
+EXPOSE 22
+
+RUN {{ linux_distro_package_manager }} update -y 
+RUN {{ linux_distro_package_manager }} install -y {{ default_packages }} {{ additional_packages }}
+
+
+# Add a non-root user & set password
+RUN useradd -ms /bin/bash $USERNAME
+
+# Create the ssh directory and authorized_keys file
+USER $USERNAME
+RUN mkdir /home/$USERNAME/.ssh
+COPY ./ssh_keys/{{ ssh_key_publickey_filename }} /home/$USERNAME/.ssh/authorized_keys
+
+USER root
+RUN chown $USERNAME /home/$USERNAME/.ssh/authorized_keys && \
+    chmod 600 /home/$USERNAME/.ssh/authorized_keys
+RUN echo "${USERNAME} ALL=(ALL) NOPASSWD: ALL " >> /etc/sudoers
+
+COPY ./entrypoint/{{ docker_entrypoint_filename }} /{{ docker_entrypoint_filename }}
+RUN chmod +x /{{ docker_entrypoint_filename }}
+ENTRYPOINT ["/{{ docker_entrypoint_filename }}"]
