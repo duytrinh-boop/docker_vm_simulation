@@ -110,7 +110,7 @@
   #     force: true
   #   become: true
 
-  - name: Install collection community.docker to ensure community.docker.docker_compose_v2 works
+  - name: Install collection community.docker to ensure community.docker.docker_compose_v2 works, for root user
     command: "ansible-galaxy install {{ item.role_name }}"
     args:
       creates: "{{ item.role_path }}"
@@ -118,5 +118,14 @@
       - role_name: community.docker
         role_path: "~/.ansible/collections/ansible_collections/community/docker"
     become: true
+  
+  - name: Install collection community.docker to ensure community.docker.docker_compose_v2 works, for non-root user
+    command: "ansible-galaxy install {{ item.role_name }}"
+    args:
+      creates: "{{ item.role_path }}"
+    loop: 
+      - role_name: community.docker
+        role_path: "~/.ansible/collections/ansible_collections/community/docker"
+    become: false
 
   when: ansible_os_family == 'Debian'
