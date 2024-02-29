@@ -30,6 +30,7 @@
         - python3-pip
         - virtualenv
         - python3-setuptools
+        - python3-docker
       state: latest
       update_cache: true
 
@@ -79,9 +80,9 @@
       - docker-buildx-plugin
       - containerd.io
 
-  - name: Install Docker Module for Python
-    pip:
-      name: docker
+  # - name: Install Docker Module for Python
+  #   pip:
+  #     name: docker
 
   - name: Make sure docker started and enabled
     service:
