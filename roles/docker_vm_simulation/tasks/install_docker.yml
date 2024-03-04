@@ -98,7 +98,7 @@
   #   become: true
 
   - name: Install collection community.docker to ensure community.docker.docker_compose_v2 works, for root user
-    command: "ansible-galaxy install {{ item.role_name }}"
+    command: "ansible-galaxy collection install {{ item.role_name }}"
     args:
       creates: "{{ item.role_path }}"
     loop: 
@@ -107,7 +107,7 @@
     become: true
   
   - name: Install collection community.docker to ensure community.docker.docker_compose_v2 works, for non-root user
-    command: "ansible-galaxy install {{ item.role_name }}"
+    command: "ansible-galaxy collection install {{ item.role_name }}"
     args:
       creates: "{{ item.role_path }}"
     loop: 
