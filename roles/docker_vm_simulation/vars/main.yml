@@ -1,4 +1,7 @@
 ---
+docker_image_custom_name: "splunk_image_{{ dockerfile_baseimage | replace(':', '_') }}" # 
+docker_compose_file_name: "{{ docker_vars_file }}" # use the same name as the docker_vars_file by default. E.g. the docker vars file is named deploymentlab.yml, then this variable will be named deploymentlab
+
 # Automatically determine desired splunk version string
 splunk_file: "{{ splunk_package_url | regex_search('(splunk(?:forwarder)?\\-\\d+[^/]*\\.tgz)') }}"
 splunk_v: "{{ splunk_package_url | regex_search('(\\d+\\.\\d+\\.\\d+(?:\\.\\d+)?)') }}"
@@ -14,6 +17,8 @@ docker_compose_file: "{{ docker_compose_files_path }}/{{ docker_compose_file_nam
 ansible_inventory_path: "../environments/{{ environment_dir }}"
 ansible_inventory_filename: "inventory_{{ docker_compose_file_name }}.ini"
 ansible_inventory_file: "{{ ansible_inventory_path }}//{{ ansible_inventory_filename }}"
+
+
 
 #########################
 #### dockerfile variables
