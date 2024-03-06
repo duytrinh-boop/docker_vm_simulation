@@ -31,6 +31,8 @@
         - virtualenv
         - python3-setuptools
         - python3-docker
+        - python3-wheel
+        - python3-yaml
       state: latest
       update_cache: true
 
