@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../docker_vars_schema.json
+
+server_names_list:
+  - name: tos-spl-cm01
+    instancetype:
+      - clustermanager
+      - full
+  - name: tos-spl-depl01
+    instancetype:
+      - full
+      - deploymentserver
+  - name: tos-spl-shdep01
+    instancetype:
+      - full
+      - shdeployer
+  - name: tos-spl-srch01
+    instancetype:
+      - full
+      - shc
+  - name: tos-spl-srch02
+    instancetype:
+      - full
+      - shc
+  - name: tos-spl-srch03
+    instancetype:
+      - full
+      - shc
+  - name: tos-spl-srch04
+    instancetype:
+      - full
+      - search
+  - name: tos-spl-index01
+    instancetype:
+      - full
+      - indexers
+  - name: tos-spl-index02
+    instancetype:
+      - full
+      - indexers
+  - name: tos-spl-index03
+    instancetype:
+      - full
+      - indexers
+  - name: tos-spl-index04
+    instancetype:
+      - full
+      - indexers
+  - name: tos-spl-hf01
+    instancetype:
+      - full
+  - name: tos-spl-hf02
+    instancetype:
+      - full
+  - name: tos-spl-haprx01
+    instancetype:
+      - not-splunk
+  - name: tos-spl-haprx02
+    instancetype:
+      - not-splunk
+
+dockerfile_baseimage: "ubuntu:latest"
+docker_image_custom_name: "splunk_image_{{ dockerfile_baseimage | replace(':', '_') }}"
+docker_compose_file_name: "{{ docker_vars_file }}"
+environment_dir: development
+simulated_vm_os_family: "{% if ('ubuntu' in dockerfile_baseimage or 'debian' in dockerfile_baseimage) %}Debian{% elif ('centos' in dockerfile_baseimage or 'rocky' in dockerfile_baseimage) %}Centos{% else %}RedHat{% endif %}"

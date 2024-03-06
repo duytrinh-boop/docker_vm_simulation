@@ -1,0 +1,55 @@
+# yaml-language-server: $schema=../../docker_vars_schema.json
+
+server_names_list:
+  - name: splunk-clustermaster
+    instancetype:
+      - clustermanager
+      - full
+  - name: splunk-deploy
+    instancetype:
+      - full
+      - deploymentserver
+  - name: tos-splunk-sh-cluster-deploy
+    instancetype:
+      - full
+      - shdeployer
+  - name: tos-splunk-search-4
+    instancetype:
+      - full
+      - shc
+  - name: tos-splunk-search-temp
+    instancetype:
+      - full
+      - search
+  - name: tos-splunk-search-2
+    instancetype:
+      - full
+      - shc
+  - name: tos-splunk-search-3
+    instancetype:
+      - full
+      - shc
+  - name: splunk-index1
+    instancetype:
+      - full
+      - indexers
+  - name: splunk-index2
+    instancetype:
+      - full
+      - indexers
+  - name: tos-splunk-heavy-forwarder
+    instancetype:
+      - full
+  - name: tos-splunk-heavy-forwarder-2
+    instancetype:
+      - full
+  - name: tos-splunk-haproxy-1
+    instancetype:
+      - not-splunk
+  - name: tos-splunk-haproxy-2
+    instancetype:
+      - not-splunk
+
+dockerfile_baseimage: "ubuntu:latest"
+environment_dir: development
+simulated_vm_os_family: "{% if ('ubuntu' in dockerfile_baseimage or 'debian' in dockerfile_baseimage) %}Debian{% elif ('centos' in dockerfile_baseimage or 'rocky' in dockerfile_baseimage) %}Centos{% else %}RedHat{% endif %}"
