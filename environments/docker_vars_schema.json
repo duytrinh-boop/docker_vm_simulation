@@ -15,6 +15,7 @@
               "items": {
                 "type": "string",
                 "enum": [
+                  "monitoringconsole",
                   "uf",
                   "deploymentserver",
                   "licensemaster",
@@ -23,15 +24,41 @@
                   "search",
                   "indexers",
                   "shdeployer",
-                  "shc"
+                  "shc",
+                  "not-splunk"
                 ]
               }
             }
           }
         },
         "required": ["name", "instancetype"]
+      },
+      "environment_dir": {
+        "type": "string",
+        "enum": [
+          "development"
+        ]
+      },
+      "dockerfile_baseimage": {
+        "type": "string",
+        "description": "E.g. fedora:36 OR ubuntu:latest. Find baseimages on hub.docker.com"
+      },
+      "simulated_vm_os_family": {
+        "type": "string",
+        "description": "This variable determines what vars file to use. See available vars files under roles/docker_vm_simluation/vars/",
+        "const": "{% if ('ubuntu' in dockerfile_baseimage or 'debian' in dockerfile_baseimage) %}Debian{% elif ('centos' in dockerfile_baseimage or 'rocky' in dockerfile_baseimage) %}Centos{% else %}RedHat{% endif %}"
+      },
+      "docker_compose_file_name": {
+        "type": "string",
+        "description": "The composefile name, that contains the server_names_list above. Value is this name's file",
+        "const": "{{ docker_vars_file }}" 
+      },
+      "docker_image_custom_name": {
+        "type": "string",
+        "description": "The name of the resulting docker image, built by this ansible role. See all the available docker images using `docker images ls`",
+        "const": "splunk_image_{{ dockerfile_baseimage | replace(':', '_') }}"
       }
     },
-    "required": ["server_names_list"]
+    "required": ["server_names_list", "environment_dir", "dockerfile_baseimage", "simulated_vm_os_family"]
   }
   
