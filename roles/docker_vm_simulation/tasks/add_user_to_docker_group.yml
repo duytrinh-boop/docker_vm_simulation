@@ -1,31 +1,53 @@
 ---
-- name: add root user to docker group
-  block:
-  - name: add user to docker group
-    user:
-      name: "{{ ansible_user_id }}"
-      groups: docker
-      append: yes
-    become: true
-    register: add_root_to_docker_group_result
+# - name: add root user to docker group
+#   block:
+#   - name: add user to docker group
+#     user:
+#       name: "{{ ansible_user_id }}"
+#       groups: docker
+#       append: yes
+#     become: true
+#     register: add_root_to_docker_group_result
 
-  - name: Reset ssh connection to allow user changes to affect ansible user
-    ansible.builtin.meta: reset_connection
-    # when: add_root_to_docker_group_result.changed
+#   - name: Reset ssh connection to allow user changes to affect ansible user
+#     ansible.builtin.meta: reset_connection
+#     # when: add_root_to_docker_group_result.changed
 
-- name: add current user to docker group
-  block:
-  - name: add user to docker group
-    user:
-      name: "{{ ansible_user_id }}"
-      groups: docker
-      append: yes
-    become: false
-    register: add_user_to_docker_group_result
+# - name: add current user to docker group
+#   block:
+#   - name: add user to docker group
+#     user:
+#       name: "{{ ansible_user_id }}"
+#       groups: docker
+#       append: yes
+#     become: false
+#     register: add_user_to_docker_group_result
 
-  - name: Reset ssh connection to allow user changes to affect ansible user
-    ansible.builtin.meta: reset_connection
-    # when: add_user_to_docker_group_result.changed
+#   - name: Reset ssh connection to allow user changes to affect ansible user
+#     ansible.builtin.meta: reset_connection
+#     # when: add_user_to_docker_group_result.changed
 
-- name: Reset ssh connection
-  ansible.builtin.meta: reset_connection
+# - name: Reset ssh connection
+#   ansible.builtin.meta: reset_connection
+
+- name: print ansible_user_id
+  debug:
+    var: ansible_user_id
+    
+- name: add user to docker group
+  user:
+    name: "{{ ansible_user_id }}"
+    groups: docker
+    append: yes
+  become: true
+
+- name: add user to docker group
+  user:
+    name: "{{ ansible_user_id }}"
+    groups: docker
+    append: yes
+  become: false
+
+# reset_connection doesn't support conditionals.
+- name: Reset connection so docker group is picked up.
+  meta: reset_connection
