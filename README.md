@@ -31,6 +31,9 @@ docker_vars_filename="ksat_old_prod"
 
 # run playbook 
 ansible-playbook playbooks/1_deploy_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
+
+# On first time run, the playbook may fail. In that case, just run it again
+
 ```
 
 **To verify**
