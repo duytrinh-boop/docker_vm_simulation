@@ -53,6 +53,6 @@
   meta: reset_connection
 
 - name: reset ssh connection to allow user changes to affect 'current login user'
-  shell: sleep 1; pkill -u {{ ansible_ssh_user }} sshd
+  shell: sleep 1; pkill -u {{ ansible_user_id }} sshd
   async: 5
   poll: 1
