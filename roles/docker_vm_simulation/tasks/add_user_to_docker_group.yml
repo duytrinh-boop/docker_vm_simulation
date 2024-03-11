@@ -51,8 +51,3 @@
 # reset_connection doesn't support conditionals.
 - name: Reset connection so docker group is picked up.
   meta: reset_connection
-
-- name: reset ssh connection to allow user changes to affect 'current login user'
-  shell: sleep 1; pkill -u {{ ansible_user_id }} sshd
-  async: 5
-  poll: 1
