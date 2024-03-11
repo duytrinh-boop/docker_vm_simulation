@@ -11,7 +11,7 @@
 
   - name: Reset ssh connection to allow user changes to affect ansible user
     ansible.builtin.meta: reset_connection
-    when: add_root_to_docker_group_result.changed
+    # when: add_root_to_docker_group_result.changed
 
 - name: add current user to docker group
   block:
@@ -25,4 +25,4 @@
 
   - name: Reset ssh connection to allow user changes to affect ansible user
     ansible.builtin.meta: reset_connection
-    when: add_user_to_docker_group_result.changed
+    # when: add_user_to_docker_group_result.changed
