@@ -55,6 +55,15 @@ docker_vars_filename="ksat_old_prod"
 #ansible-playbook playbooks/2_teardown_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
 ```
 
+If you want to spin up the containers again:
+```
+# use predefined environment
+docker_vars_filename="ksat_old_prod"
+
+# run playbook 
+ansible-playbook playbooks/1_deploy_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
+```
+
 
 
 
