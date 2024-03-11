@@ -116,5 +116,7 @@
       - role_name: community.docker
         role_path: "~/.ansible/collections/ansible_collections/community/docker"
     become: false
-    
+
+  - name: Refresh Ansible cache to recognize newly installed collections
+    meta: refresh_inventory    
   when: ansible_os_family == 'Debian'
