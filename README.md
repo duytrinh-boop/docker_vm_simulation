@@ -33,7 +33,7 @@ docker_vars_filename="ksat_old_prod"
 ansible-playbook playbooks/1_deploy_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
 ```
 
-To verify
+**To verify**
 ```
 # Step 1: list all containers
 docker container ls 
@@ -48,14 +48,15 @@ ansible all -m ping -i environments/development/inventory_$docker_vars_filename.
 
 This means we can take the inventory file and use it.
 
-If we want to destroy the containers:
+
+**To destroy the containers:**
 ```
 # remember to replace with the correct 'docker_vars_filename'
 docker_vars_filename="ksat_old_prod"
 #ansible-playbook playbooks/2_teardown_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
 ```
 
-If you want to spin up the containers again:
+**spin up the containers again:**
 ```
 # use predefined environment
 docker_vars_filename="ksat_old_prod"
