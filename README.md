@@ -41,7 +41,21 @@ docker container ls
 # Step 2: open a web browser and check that host can communicate directly
 http://http-echo.test:5678
 
+# Step 3: run ansible test on the new inventory
+ansible all -m ping -i environments/development/inventory_$docker_vars_filename.ini
+
 ```
+
+This means we can take the inventory file and use it.
+
+If we want to destroy the containers:
+```
+# remember to replace with the correct 'docker_vars_filename'
+docker_vars_filename="ksat_old_prod"
+#ansible-playbook playbooks/2_teardown_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
+```
+
+
 
 
 ## SLOW START
