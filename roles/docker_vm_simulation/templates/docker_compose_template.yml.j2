@@ -24,3 +24,5 @@ services:
     hostname: http-echo.test
     image: hashicorp/http-echo
     command: ["-text=if you can read this text, it means that your host machine can resolve the docker container's hostnames, and the host and containers can communicate directly with each other"]
+    labels:
+      docker_compose_file: {{ docker_compose_file_name }}
