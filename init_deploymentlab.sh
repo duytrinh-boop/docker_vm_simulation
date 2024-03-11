@@ -1,7 +1,7 @@
-docker_vars_filename="deploymentlab"
+docker_vars_filename="deploymentlab.yml"
 sudo docker container ls -af label=docker_compose_file=compose_file_$docker_vars_filename
 
-ansible-playbook playbooks/1_deploy_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
+ansible-playbook playbooks/1_deploy_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename"
 
 inventory="environments/development/inventory_$docker_vars_filename.ini"
 
