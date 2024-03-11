@@ -22,7 +22,7 @@ newgrp docker
 
 ## QUICKSTART
 Spin up a predefined environment. 
-Find predfined environments under 'environment/development/docker_vars'
+Find predefined environments under 'environment/development/docker_vars'
 
 E.g. ksat_old_prod.yml
 ```
@@ -53,7 +53,7 @@ This means we can take the inventory file and use it.
 ```
 # remember to replace with the correct 'docker_vars_filename'
 docker_vars_filename="ksat_old_prod"
-#ansible-playbook playbooks/2_teardown_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
+ansible-playbook playbooks/2_teardown_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
 ```
 
 **spin up the containers again:**
