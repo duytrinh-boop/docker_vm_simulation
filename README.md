@@ -27,10 +27,10 @@ Find predefined environments under 'environment/development/docker_vars'
 E.g. ksat_old_prod.yml
 ```
 # use predefined environment
-docker_vars_filename="ksat_old_prod"
+docker_vars_filename="ksat_old_prod.yml"
 
 # run playbook 
-ansible-playbook playbooks/1_deploy_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
+ansible-playbook playbooks/1_deploy_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename"
 
 # On first time run, the playbook may fail. In that case, just run it again
 
@@ -55,8 +55,8 @@ This means we can take the inventory file and use it.
 **To destroy the containers:**
 ```
 # remember to replace with the correct 'docker_vars_filename'
-docker_vars_filename="ksat_old_prod"
-ansible-playbook playbooks/2_teardown_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename.yml"
+docker_vars_filename="ksat_old_prod.yml"
+ansible-playbook playbooks/2_teardown_linux_containers.yml --extra-var "docker_vars_file=$docker_vars_filename"
 ```
 
 **spin up the containers again:**
