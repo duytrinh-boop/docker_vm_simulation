@@ -1,7 +1,7 @@
 ---
 ### Update known_hosts verification or else complains about MITM attack as host keys have changed 
 - name: "refresh ~/.ssh/known_hosts file for key verification: get hostnames"
-  shell: docker inspect -f '{{ '{{' }}.Config.Hostname{{ '}}' }}' $(docker container ls -af label=docker_compose_file={{ docker_compose_file_name }} -aq)
+  shell: docker inspect -f '{{ '{{' }}.Config.Hostname{{ '}}' }}' $(docker container ls -af label=docker_compose_file={{ docker_compose_file_name }} -aq)  | grep -v "http-echo.test" 
   become: true
   register: hostnames
   changed_when: false
