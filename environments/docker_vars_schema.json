@@ -22,7 +22,7 @@
                   "full",
                   "clustermanager",
                   "search",
-                  "indexers",
+                  "indexer",
                   "shdeployer",
                   "shc",
                   "not-splunk"

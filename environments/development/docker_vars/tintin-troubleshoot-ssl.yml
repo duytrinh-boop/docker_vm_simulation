@@ -9,7 +9,7 @@ server_names_list:
       - uf
   - name: aio1.tintin.website
     instancetype: 
-      - indexers
+      - indexer
       - monitoringconsole
       - licensemaster
       - full

@@ -66,7 +66,7 @@
 #     - { instancetype: monitoringconsole,        instances: "{{ all_containers_list | regex_findall('.*mc.*',ignorecase=True) | join('\n') }}" }
 #     - { instancetype: clustermanager,        instances: "{{ all_containers_list | regex_findall('.*cm.*',ignorecase=True) | join('\n') }}" }
 #     - { instancetype: search,           instances: "{{ all_containers_list | regex_findall('.*sh.*',ignorecase=True) | join('\n') }}" }
-#     - { instancetype: indexers,               instances: "{{ all_containers_list | regex_findall('.*idx.*',ignorecase=True) | join('\n') }}" }
+#     - { instancetype: indexer,               instances: "{{ all_containers_list | regex_findall('.*idx.*',ignorecase=True) | join('\n') }}" }
 #     - { instancetype: deploymentserver,     instances: "{{ all_containers_list | regex_findall('.*ds.*',ignorecase=True) | join('\n') }}" }
 #     - { instancetype: shdeployer,              instances: "{{ all_containers_list | regex_findall('.*shc.*',ignorecase=True) | join('\n') }}" }
 #     #- { instancetype: full,  instances: "{{ all_containers_list | regex_findall('.*dmc.*',ignorecase=True) | join('\n') }}" }

@@ -22,15 +22,15 @@ server_names_list:
       - full
   - name: idx1.lab
     instancetype: 
-      - indexers
+      - indexer
       - full
   - name: idx2.lab
     instancetype: 
-      - indexers
+      - indexer
       - full
   - name: idx3.lab
     instancetype: 
-      - indexers
+      - indexer
       - full
 
 

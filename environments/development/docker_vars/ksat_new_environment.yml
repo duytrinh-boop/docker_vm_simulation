@@ -32,19 +32,19 @@ server_names_list:
   - name: tos-spl-index01
     instancetype:
       - full
-      - indexers
+      - indexer
   - name: tos-spl-index02
     instancetype:
       - full
-      - indexers
+      - indexer
   - name: tos-spl-index03
     instancetype:
       - full
-      - indexers
+      - indexer
   - name: tos-spl-index04
     instancetype:
       - full
-      - indexers
+      - indexer
   - name: tos-spl-hf01
     instancetype:
       - full

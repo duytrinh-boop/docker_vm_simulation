@@ -32,11 +32,11 @@ server_names_list:
   - name: splunk-index1
     instancetype:
       - full
-      - indexers
+      - indexer
   - name: splunk-index2
     instancetype:
       - full
-      - indexers
+      - indexer
   - name: tos-splunk-heavy-forwarder
     instancetype:
       - full
