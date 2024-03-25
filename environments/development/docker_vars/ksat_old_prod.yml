@@ -4,6 +4,8 @@ server_names_list:
   - name: splunk-clustermaster
     instancetype:
       - clustermanager
+      - licensemaster
+      - monitoringconsole
       - full
   - name: splunk-deploy
     instancetype:

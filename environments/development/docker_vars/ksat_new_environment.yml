@@ -4,6 +4,8 @@ server_names_list:
   - name: tos-spl-cm01
     instancetype:
       - clustermanager
+      - licensemaster
+      - monitoringconsole
       - full
   - name: tos-spl-depl01
     instancetype:
