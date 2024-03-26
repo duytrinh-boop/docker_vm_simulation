@@ -1,3 +1,3 @@
 roles/docker_vm_simulation/files/successful_pre_reqs_marker_file
-roles/docker_vm_simulation/files/docker_image/custom_dockerfile/ssh_keys/splunk_docker_key.id.pub
-roles/docker_vm_simulation/files/docker_image/custom_dockerfile/ssh_keys/splunk_docker_key.id
+roles/docker_vm_simulation/files/docker_compose_files/*
+roles/docker_vm_simulation/files/docker_image/custom_dockerfile/ssh_keys/*
