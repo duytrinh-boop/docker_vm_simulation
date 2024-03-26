@@ -21,6 +21,7 @@ shdeployer
 licensemaster
 hf
 monitoringconsole
+shc
 
 [deploymentclients:children]
 clustermanager
@@ -52,6 +53,7 @@ licensemaster
 [full]
 [shcd]
 [monitoringconsole]
+[shc]
 
 {% for group, hosts in inventory.items() %}
 [{{ group }}]
