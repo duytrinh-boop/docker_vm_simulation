@@ -31,6 +31,7 @@ server_names_list:
     instancetype:
       - full
       - search
+      - search_head_enterprise_security
   - name: tos-spl-index01
     instancetype:
       - full
@@ -50,15 +51,7 @@ server_names_list:
   - name: tos-spl-hf01
     instancetype:
       - full
-  - name: tos-spl-hf02
-    instancetype:
-      - full
-  - name: tos-spl-haprx01
-    instancetype:
-      - not-splunk
-  - name: tos-spl-haprx02
-    instancetype:
-      - not-splunk
+      - hf
 
 dockerfile_baseimage: "ubuntu:latest"
 docker_image_custom_name: "splunk_image_{{ dockerfile_baseimage | replace(':', '_') }}"
