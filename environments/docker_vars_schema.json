@@ -25,7 +25,9 @@
                   "indexer",
                   "shdeployer",
                   "shc",
-                  "not-splunk"
+                  "not-splunk",
+                  "hf",
+                  "search_head_enterprise_security"
                 ]
               }
             }
