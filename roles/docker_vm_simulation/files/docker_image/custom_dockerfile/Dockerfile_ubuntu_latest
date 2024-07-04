@@ -6,7 +6,7 @@ ARG USERPASS=ansible
 EXPOSE 22
 
 RUN apt update -y 
-RUN apt install -y systemd systemd-sysv dbus dbus-user-session openssh-server whois sudo acl vim python3 python3-pip netcat iputils-ping rsync procps tar 
+RUN apt install -y systemd systemd-sysv dbus dbus-user-session openssh-server whois sudo acl vim python3 python3-pip netcat-openbsd iputils-ping rsync procps tar 
 
 
 # Add a non-root user & set password
