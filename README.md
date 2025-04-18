@@ -1,6 +1,6 @@
 # docker_vm_simulation
 Project to spin up containers that are supposed to simulate Virtual Machines. These containers are quick to build, and quick to tear down.
-https://prod.liveshare.vsengsaas.visualstudio.com/join?766FBF18B01B30BA5676EA6EB0B917611D04
+[https://prod.liveshare.vsengsaas.visualstudio.com/join?766FBF18B01B30BA5676EA6EB0B917611D04](https://prod.liveshare.vsengsaas.visualstudio.com/join?5C387985C28A272B6A3F1B08834928882555)
 This project does 2 things:
 1. Spin up containers
 2. creates an ansible inventory file of those containers
